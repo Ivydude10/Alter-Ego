@@ -66,11 +66,11 @@ async def caesarbf(ctx, text):
         for j in range(len(text)):
             char = text[j]
             if (char.isupper()):
-                result+= chr((ord(char) + int(s)-65) % 26 + 65)
+                result+= chr((ord(char) + int(i)-65) % 26 + 65)
             elif (char.isspace()):
                 result += ' '
             else:
-                result += chr((ord(char) + int(s) - 97) % 26 + 97)
+                result += chr((ord(char) + int(i) - 97) % 26 + 97)
         embeded.add_field(name="Shift #" + i, value=result, inline=False)
     await ctx.send(embed=embeded)
 
