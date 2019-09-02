@@ -29,11 +29,6 @@ class Utility(commands.Cog):
                 if str(channel) == "the-bar":
                     await client.get_channel(612524089730531348).send(f"""Hello and Welcome {ctx.mention}! To The Tavern!""")
 
-    @commands.Cog.listener()
-    async def on_ready(self):
-        await self.change_presence(activity=Game(name="bit.ly/IP1_start"))
-        print("Logged in as " + client.user.name)
-
     @commands.command(brief="Only for use in the tavern")
     async def sethex(self, ctx, val: str):
         value = discord.Colour(value=int(val, 16))
