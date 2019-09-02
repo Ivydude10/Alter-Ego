@@ -164,3 +164,6 @@ class Utility(commands.Cog):
                 embeded.add_field(name=role, value="Successfully removed role from " + user.display_name, inline=False)
                 await ctx.send(embed=embeded)
                 await user.remove_roles(role1)
+
+def setup(client):
+    client.add_cog(Utility(client))
