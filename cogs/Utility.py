@@ -14,6 +14,8 @@ from discord import Game
 from discord.ext import commands
 from discord.ext.commands import Bot
 
+client = discord.Client()
+
 class Utility(commands.Cog):
 
     def __init__(self, client):
@@ -28,7 +30,7 @@ class Utility(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        await self.client.change_presence(activity=Game(name="bit.ly/IP1_start"))
+        await client.change_presence(activity=Game(name="bit.ly/IP1_start"))
         print("Logged in as " + client.user.name)
 
     @commands.command(brief="Only for use in the tavern")
