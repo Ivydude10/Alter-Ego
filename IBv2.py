@@ -402,7 +402,7 @@ async def pingus(ctx):
 #            print(err)
 #        else:
 #            print("Payload delivered successfully, code {}.".format(result.status_code))
-@client.event()
+@client.event
 async def on_ready():
     await client.change_presence(activity=Game(name="bit.ly/IP1_start"))
     print("Logged in as " + client.user.name)
