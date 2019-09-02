@@ -4,5 +4,4 @@ datetime
 PyNaCl
 youtube_dl
 FFmpeg
-os
 discord.py[voice]
