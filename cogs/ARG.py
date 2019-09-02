@@ -43,7 +43,7 @@ class ARG(commands.Cog):
         embeded.add_field(name="Cipher:", value=result, inline=False)
         await ctx.send(embed=embeded)
 
-    @command.command()
+    @commands.command()
     async def caesarbf(ctx, text):
         embeded = discord.Embed(
             title='Caesar Decrypted',
@@ -63,7 +63,7 @@ class ARG(commands.Cog):
             embeded.add_field(name="Shift #" + str(i), value=result, inline=False)
         await ctx.send(embed=embeded)
 
-    @command.command(name='htt',
+    @commands.command(name='htt',
                     description="Converts hexadecimal code into text.",
                     brief="Hex to Text")
     async def hex_to_text(ctx, *hex_data):
@@ -75,7 +75,7 @@ class ARG(commands.Cog):
         embeded.add_field(name="Decrypted Text:", value=ascii_string, inline=False)
         await ctx.send(embed=embeded)
 
-    @command.command(name='tth',
+    @commands.command(name='tth',
                     description="Converts text into hexadecimal code.",
                     brief="Text to Hex")
     async def text_to_hex(ctx,  *ascii_string):
@@ -88,7 +88,7 @@ class ARG(commands.Cog):
        embeded.add_field(name="Encrypted Text:", value=hex_data, inline=False)
        await ctx.send(embed=embeded)
 
-    @command.command(name='b64tt',
+    @commands.command(name='b64tt',
                     description="Converts base 64 into text.",
                     brief="Base64 to Text")
     async def base_to_text(ctx, base_data):
@@ -100,7 +100,7 @@ class ARG(commands.Cog):
          embeded.add_field(name="Decrypted Text:", value=ascii_string, inline=False)
          await ctx.send(embed=embeded)
 
-    @command.command(name='ttb64',
+    @commands.command(name='ttb64',
                     description="Converts text into base64",
                     brief="Text to Base64")
     async def text_to_base(ctx, *ascii_string):
@@ -113,7 +113,7 @@ class ARG(commands.Cog):
        embeded.add_field(name="Encrypted Text:", value=base_data, inline=False)
        await ctx.send(embed=embeded)
 
-    @command.command(name='b32tt',
+    @commands.command(name='b32tt',
                     description="Converts base 32 into text.",
                     brief="Base32 to Text")
     async def base_to_text(ctx, base_data):
@@ -125,7 +125,7 @@ class ARG(commands.Cog):
         embeded.add_field(name="Decrypted Text:", value=ascii_string, inline=False)
         await ctx.send(embed=embeded)
 
-    @command.command(name='ttb32',
+    @commands.command(name='ttb32',
                     description="Converts text into base32",
                     brief="Text to Base32")
     async def text_to_base(ctx, *ascii_string):
@@ -138,7 +138,7 @@ class ARG(commands.Cog):
        embeded.add_field(name="Encrypted Text:", value=base_data, inline=False)
        await ctx.send(embed=embeded)
 
-    @command.command(name='bintext',
+    @commands.command(name='bintext',
                     description="Converts binary code into text",
                     brief='Binary to Text'
     )
@@ -151,7 +151,7 @@ class ARG(commands.Cog):
         embeded.add_field(name="Decrypted Text:", value=output, inline=False)
         await ctx.send(embed=embeded)
 
-    @command.command(name='textbin',
+    @commands.command(name='textbin',
                     description="Converts text into binary code",
                     brief='Text to Binary'
     )
