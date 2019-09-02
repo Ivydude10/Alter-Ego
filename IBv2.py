@@ -79,17 +79,13 @@ async def caesarbf(ctx, text):
                 description="Converts hexadecimal code into text.",
                 brief="Hex to Text")
 async def hex_to_text(ctx, *hex_data):
-    if ctx.message.author.id == 345993541643665410:
-        msg = "No <@345993541643665410>..."
-        await ctx.send(msg)
-    else:
-        ascii_string = str(base64.b16decode(''.join(hex_data), casefold=True))[2:-1]
-        embeded = discord.Embed(
-            title='Hex Decrypted',
-            colour=discord.Colour.default()
-        )
-        embeded.add_field(name="Decrypted Text:", value=ascii_string, inline=False)
-        await ctx.send(embed=embeded)
+    ascii_string = str(base64.b16decode(''.join(hex_data), casefold=True))[2:-1]
+    embeded = discord.Embed(
+        title='Hex Decrypted',
+        colour=discord.Colour.default()
+    )
+    embeded.add_field(name="Decrypted Text:", value=ascii_string, inline=False)
+    await ctx.send(embed=embeded)
 
 @client.command(name='tth',
                 description="Converts text into hexadecimal code.",
@@ -108,17 +104,13 @@ async def text_to_hex(ctx,  *ascii_string):
                 description="Converts base 64 into text.",
                 brief="Base64 to Text")
 async def base_to_text(ctx, base_data):
-    if ctx.message.author.id == 345993541643665410:
-        msg = "No <@345993541643665410>..."
-        await ctx.send(msg)
-    else:
-         ascii_string = str(base64.b64decode(base_data))[2:-1]
-         embeded = discord.Embed(
-              title='Base64 Decrypted',
-              colour=discord.Colour.default()
-         )
-         embeded.add_field(name="Decrypted Text:", value=ascii_string, inline=False)
-         await ctx.send(embed=embeded)
+     ascii_string = str(base64.b64decode(base_data))[2:-1]
+     embeded = discord.Embed(
+          title='Base64 Decrypted',
+          colour=discord.Colour.default()
+     )
+     embeded.add_field(name="Decrypted Text:", value=ascii_string, inline=False)
+     await ctx.send(embed=embeded)
 
 @client.command(name='ttb64',
                 description="Converts text into base64",
@@ -137,17 +129,13 @@ async def text_to_base(ctx, *ascii_string):
                 description="Converts base 32 into text.",
                 brief="Base32 to Text")
 async def base_to_text(ctx, base_data):
-    if ctx.message.author.id == 345993541643665410:
-        msg = "No <@345993541643665410>..."
-        await ctx.send(msg)
-    else:
-        ascii_string = str(base64.b32decode(base_data))[2:-1]
-        embeded = discord.Embed(
-             title='Base32 Decrypted',
-             colour=discord.Colour.default()
-        )
-        embeded.add_field(name="Decrypted Text:", value=ascii_string, inline=False)
-        await ctx.send(embed=embeded)
+    ascii_string = str(base64.b32decode(base_data))[2:-1]
+    embeded = discord.Embed(
+         title='Base32 Decrypted',
+         colour=discord.Colour.default()
+    )
+    embeded.add_field(name="Decrypted Text:", value=ascii_string, inline=False)
+    await ctx.send(embed=embeded)
 
 @client.command(name='ttb32',
                 description="Converts text into base32",
@@ -167,17 +155,13 @@ async def text_to_base(ctx, *ascii_string):
                 brief='Binary to Text'
 )
 async def binary_to_text(ctx, s):
-    if ctx.message.author.id == 345993541643665410:
-        msg = "No <@345993541643665410>..."
-        await ctx.send(msg)
-    else:
-        output = ''.join(chr(int(s[i*8:i*8+8],2)) for i in range(len(s)//8))
-        embeded = discord.Embed(
-             title='Binary Decrypted',
-             colour=discord.Colour.default()
-        )
-        embeded.add_field(name="Decrypted Text:", value=output, inline=False)
-        await ctx.send(embed=embeded)
+    output = ''.join(chr(int(s[i*8:i*8+8],2)) for i in range(len(s)//8))
+    embeded = discord.Embed(
+         title='Binary Decrypted',
+         colour=discord.Colour.default()
+    )
+    embeded.add_field(name="Decrypted Text:", value=output, inline=False)
+    await ctx.send(embed=embeded)
 
 @client.command(name='textbin',
                 description="Converts text into binary code",
@@ -194,17 +178,13 @@ async def text_to_binary(ctx, *text):
 
 @client.command(pass_context=True)
 async def praise(ctx, *ascii_string):
-    if ctx.message.author.id == 345993541643665410:
-        msg = "No <@345993541643665410>..."
-        await ctx.send(msg)
-    else:
-        string = ' '.join(ascii_string)
-        str = ""
-        for i in string:
-            str = i + str
-        msg = '*' + str + '*'
-        await ctx.message.delete()
-        await ctx.send(msg)
+    string = ' '.join(ascii_string)
+    str = ""
+    for i in string:
+        str = i + str
+    msg = '*' + str + '*'
+    await ctx.message.delete()
+    await ctx.send(msg)
 
 
 @client.command()
