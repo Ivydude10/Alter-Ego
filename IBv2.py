@@ -5,6 +5,7 @@ import asyncio
 import aiohttp
 import json
 import discord
+import os
 #import requests
 import pytz
 import datetime
@@ -17,13 +18,13 @@ BOT_PREFIX = ("~", "&")
 
 client = Bot(command_prefix=BOT_PREFIX)
 
-#@client.command()
-#async def load(ctx, extension):
-#    client.load_extension(f'cogs.{extension}')
+@client.command()
+async def load(ctx, extension):
+    client.load_extension(f'cogs.{extension}')
 
-#@client.command()
-#async def unload(ctx, extension):
-#    client.unload_extension(f'cogs.{extension}'')
+@client.command()
+async def unload(ctx, extension):
+    client.unload_extension(f'cogs.{extension}')
 
 @client.command(pass_context=True)
 async def hello(ctx):
@@ -770,5 +771,6 @@ async def removerole(ctx, rolename=""):
 #            print(err)
 #        else:
 #            print("Payload delivered successfully, code {}.".format(result.status_code))
+for filename in os.listdir('./cogs')
 
 client.run('NTM2OTA3MTMxNDcxNzkwMDg3.Dyd0VQ.BED0UqPiQffV0ig7kdVy3BoykfM')
