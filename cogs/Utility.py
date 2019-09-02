@@ -31,7 +31,7 @@ class Utility(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        await client.change_presence(activity=Game(name="bit.ly/IP1_start"))
+        await self.change_presence(activity=Game(name="bit.ly/IP1_start"))
         print("Logged in as " + client.user.name)
 
     @commands.command(brief="Only for use in the tavern")
