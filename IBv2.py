@@ -17,6 +17,14 @@ BOT_PREFIX = ("~", "&")
 
 client = Bot(command_prefix=BOT_PREFIX)
 
+@client.command()
+async def load(ctx, extension)
+    client.load_extension(f"cogs.{extension}"")
+
+@client.command()
+async def unload(ctx, extension)
+    client.unload_extension(f"cogs.{extension}"")
+
 @client.command(pass_context=True)
 async def hello(ctx):
     msg = 'Hello <@{}>. Welcome to the server! ~~Prepare to die.~~'.format(ctx.message.author.id)
@@ -45,6 +53,27 @@ async def caesar(ctx, text, s):
     embeded.add_field(name="Shift Number:", value=s, inline=False)
     embeded.add_field(name="Cipher:", value=result, inline=False)
     await ctx.send(embed=embeded)
+
+@client.command()
+async def caesarbf(ctx, text):
+    embeded = discord.Embed(
+        title='Caesar Decrypted',
+        colour=discord.Colour.default()
+    )
+    embeded.add_field(name="Plain Text:", value=text, inline=False)
+    for i in range(25):
+        result = ""
+        for j in range(len(text)):
+            char = text[j]
+            if (char.isupper()):
+                result+= chr((ord(char) + int(s)-65) % 26 + 65)
+            elif (char.isspace()):
+                result += ' '
+            else:
+                result += chr((ord(char) + int(s) - 97) % 26 + 97)
+        embeded.add_field(name="Shift #" + i, value=result, inline=False)
+    await ctx.send(embed=embeded)
+
 
 @client.command(name='htt',
                 description="Converts hexadecimal code into text.",
