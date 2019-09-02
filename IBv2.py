@@ -18,12 +18,12 @@ BOT_PREFIX = ("~", "&")
 client = Bot(command_prefix=BOT_PREFIX)
 
 @client.command()
-async def load(ctx, extension)
-    client.load_extension(f"cogs.{extension}"")
+async def load(ctx, extension):
+    client.load_extension(f'cogs.{extension}')
 
 @client.command()
-async def unload(ctx, extension)
-    client.unload_extension(f"cogs.{extension}"")
+async def unload(ctx, extension):
+    client.unload_extension(f'cogs.{extension}'')
 
 @client.command(pass_context=True)
 async def hello(ctx):
