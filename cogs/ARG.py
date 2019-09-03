@@ -93,8 +93,8 @@ class ARG(commands.Cog):
        await ctx.send(embed=embeded)
 
     @commands.command(name='b64tt',
-                    description="Converts base 64 into text.",
-                    brief="Base64 to Text")
+                      description="Converts base 64 into text.",
+                      brief="Base64 to Text")
     async def base_to_text(self, ctx, base_data):
          ascii_string = str(base64.b64decode(base_data))[2:-1]
          embeded = discord.Embed(
@@ -105,8 +105,8 @@ class ARG(commands.Cog):
          await ctx.send(embed=embeded)
 
     @commands.command(name='ttb64',
-                    description="Converts text into base64",
-                    brief="Text to Base64")
+                      description="Converts text into base64",
+                      brief="Text to Base64")
     async def text_to_base(self, ctx, *ascii_string):
        ascii_string2 = str.encode(' '.join(ascii_string))
        base_data = str(base64.b64encode(ascii_string2))[2:-1]
