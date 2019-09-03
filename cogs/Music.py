@@ -392,4 +392,4 @@ class Music:
 
 
 def setup(client):
-    bot.add_cog(Music(client))
+    client.add_cog(Music(client))
