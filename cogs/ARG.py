@@ -32,8 +32,10 @@ class ARG(commands.Cog):
           # Encrypt lowercase characters in plain text
           elif (char.isspace()):
               result += ' '
-          else:
+          elif (char.islower()):
              result += chr((ord(char) + int(s) - 97) % 26 + 97)
+          else:
+             result += char
         embeded = discord.Embed(
             title='Caesar Encrypted',
             colour=discord.Colour.default()
@@ -58,8 +60,10 @@ class ARG(commands.Cog):
                     result+= chr((ord(char) - i-65) % 26 + 65)
                 elif (char.isspace()):
                     result += ' '
-                else:
+                elif (char.islower()):
                     result += chr((ord(char) - i - 97) % 26 + 97)
+                else:
+                    result += char
             embeded.add_field(name="Shift #" + str(i), value=result, inline=False)
         await ctx.send(embed=embeded)
 
