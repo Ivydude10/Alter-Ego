@@ -5,4 +5,3 @@ PyNaCl
 youtube_dl
 FFmpeg
 discord.py[voice]
-opus
