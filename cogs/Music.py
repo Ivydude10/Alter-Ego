@@ -10,7 +10,7 @@ from async_timeout import timeout
 from functools import partial
 from youtube_dl import YoutubeDL
 
-discord.opus.load_opus()
+discord.opus.load_opus('opus')
 
 ytdlopts = {
     'format': 'bestaudio/best',
