@@ -391,5 +391,5 @@ class Music:
         await self.cleanup(ctx.guild)
 
 
-def setup(client):
-    client.add_cog(Music(client))
+def setup(bot):
+    bot.add_cog(Music(bot))
