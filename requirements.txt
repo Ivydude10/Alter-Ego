@@ -5,3 +5,5 @@ PyNaCl
 youtube_dl
 FFmpeg
 discord.py[voice]
+git+https://github.com/xrisk/heroku-opus.git
+git+https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
