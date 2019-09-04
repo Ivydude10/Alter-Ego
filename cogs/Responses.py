@@ -250,7 +250,5 @@ class Responses(commands.Cog):
         await ctx.send("Pongus")
         await ctx.send("Lemme see that")
 
-
-
 def setup(client):
     client.add_cog(Responses(client))
