@@ -155,18 +155,18 @@ class ARG(commands.Cog):
         embeded.add_field(name="Decrypted Text:", value=ascii_string, inline=False)
         await ctx.send(embed=embeded)
 
-@commands.command(name='ttb',
+    @commands.command(name='ttb',
                   description="Converts text into base64",
                   brief="Text to Base64")
-async def text_to_base64(self, ctx, *ascii_string):
-    ascii_string2 = str.encode(' '.join(ascii_string))
-    base_data = str(base64.b64encode(ascii_string2))[2:-1]
-    embeded = discord.Embed(
-         title='Base64 Encrypted',
-         colour=discord.Colour.default()
-    )
-    embeded.add_field(name="Encrypted Text:", value=base_data, inline=False)
-    await ctx.send(embed=embeded)
+    async def text_to_base64(self, ctx, *ascii_string):
+        ascii_string2 = str.encode(' '.join(ascii_string))
+        base_data = str(base64.b64encode(ascii_string2))[2:-1]
+        embeded = discord.Embed(
+            title='Base64 Encrypted',
+            colour=discord.Colour.default()
+        )
+        embeded.add_field(name="Encrypted Text:", value=base_data, inline=False)
+        await ctx.send(embed=embeded)
 
 
 def setup(client):
