@@ -143,7 +143,7 @@ class ARG(commands.Cog):
         embeded.add_field(name="Encrypted Text:", value=output, inline=False)
         await ctx.send(embed=embeded)
 
-    @commands.command(name='btt',
+    @commands.command(name='b64tt',
                   description="Converts base 64 into text.",
                   brief="Base64 to Text")
     async def base64_to_text(self, ctx, base_data):
@@ -155,7 +155,7 @@ class ARG(commands.Cog):
         embeded.add_field(name="Decrypted Text:", value=ascii_string, inline=False)
         await ctx.send(embed=embeded)
 
-    @commands.command(name='ttb',
+    @commands.command(name='ttb64',
                   description="Converts text into base64",
                   brief="Text to Base64")
     async def text_to_base64(self, ctx, *ascii_string):
