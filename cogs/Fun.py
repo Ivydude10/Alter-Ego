@@ -27,7 +27,7 @@ class Fun(commands.Cog):
             str = i + str
         msg = '*' + str + '*'
         await ctx.message.delete()
-        await ctx.send(msg)
+        await ctx.send(str)
 
     @commands.command(name='hug',
                     aliases=['hugs'],
@@ -125,7 +125,6 @@ class Fun(commands.Cog):
                     + str(Event.clean_content) + ", put these suggestions to work and let the ideas " + str(Verb3.clean_content)\
                     + ". With so many " + str(Adj9.clean_content) + " ideas you'll have the boss declaring " + \
                     str(Excl.clean_content) + " in no time!"
-    
         await ctx.send(mainStory)
 
 def setup(client):
