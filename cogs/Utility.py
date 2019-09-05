@@ -70,9 +70,9 @@ class Utility(commands.Cog):
     @commands.command()
     async def time(self, ctx, name=""):
         check = 1
-        if name == "lime" or name == "carl" or name == "mental" or name == "wale" or name == "wubba" or name == "rubik":
+        if name == "lime" or name == "carl" or name == "mental" or name == "wale" or name == "wubba" or name == "rubik" or name == "fluffy" or name == "bb":
             tz = pytz.timezone('US/Eastern')
-        elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush" or name == "fluffy":
+        elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush":
             tz = pytz.timezone('US/Central')
         elif name == "ivy" or name == "tt":
             tz = pytz.timezone('Australia/NSW')
