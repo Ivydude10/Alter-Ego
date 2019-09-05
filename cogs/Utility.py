@@ -70,6 +70,7 @@ class Utility(commands.Cog):
     @commands.command()
     async def time(self, ctx, name=""):
         check = 1
+        name = name.lower()
         if name == "lime" or name == "carl" or name == "mental" or name == "wale" or name == "wubba" or name == "rubik" or name == "fluffy" or name == "bb":
             tz = pytz.timezone('US/Eastern')
         elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush":
