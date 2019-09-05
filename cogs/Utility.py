@@ -72,7 +72,7 @@ class Utility(commands.Cog):
         check = 1
         if name == "lime" or name == "carl" or name == "mental" or name == "wale" or name == "wubba" or name == "rubik":
             tz = pytz.timezone('US/Eastern')
-        elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush":
+        elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush" or name == "fluffy":
             tz = pytz.timezone('US/Central')
         elif name == "ivy" or name == "tt":
             tz = pytz.timezone('Australia/NSW')
