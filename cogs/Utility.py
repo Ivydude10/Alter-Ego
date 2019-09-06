@@ -134,7 +134,9 @@ class Utility(commands.Cog):
                 await user.add_roles(role1)
 
     @commands.command()
-    async def pfp(self, ctx, user: discord.Member = ctx.message.author):
+    async def pfp(self, ctx, user: discord.Member=None):
+        if user == None:
+            user = ctx.message.author
         embeded = discord.Embed(
             title = user.display_name + "\'s profile picture."
         )
