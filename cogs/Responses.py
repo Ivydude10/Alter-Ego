@@ -256,7 +256,7 @@ class Responses(commands.Cog):
             title="Death is Banned Here!",
             colour=discord.Colour.default()
         )
-        embed.set_image(url='https://cdn.discordapp.com/attachments/353766146115371009/614279320864555019/image0.png')
+        embeded.set_image(url='https://cdn.discordapp.com/attachments/353766146115371009/614279320864555019/image0.png')
         await ctx.send(embed=embeded)
 
 def setup(client):

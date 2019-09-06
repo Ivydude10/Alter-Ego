@@ -139,7 +139,7 @@ class Utility(commands.Cog):
         embeded = discord.Embed(
             title = user.display_name + "\'s profile picture."
         )
-        embed.set_image(url=user.avatar_url)
+        embeded.set_image(url=user.avatar_url)
         await ctx.send(embed=embeded)
 
     @commands.command()
