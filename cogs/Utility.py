@@ -134,6 +134,15 @@ class Utility(commands.Cog):
                 await user.add_roles(role1)
 
     @commands.command()
+    async def pfp(self, ctx):
+        user = ctx.message.author
+        embeded = discord.Embed(
+            title = user.display_name + "\'s profile picture."
+        )
+        embed.set_image(url=user.avatar_url)
+        await ctx.send(embed=embeded)
+
+    @commands.command()
     async def removerole(self, ctx, rolename=""):
         user = ctx.message.author
         check = 1

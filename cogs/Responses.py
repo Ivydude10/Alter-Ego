@@ -250,5 +250,14 @@ class Responses(commands.Cog):
         await ctx.send("Pongus")
         await ctx.send("Lemme see that")
 
+    @commands.command()
+    async def death(self, ctx):
+        embeded = discord.Embed(
+            title="Death is Banned Here!",
+            colour=discord.Colour.default()
+        )
+        embed.set_image(url='https://cdn.discordapp.com/attachments/353766146115371009/614279320864555019/image0.png')
+        await ctx.send(embed=embeded)
+
 def setup(client):
     client.add_cog(Responses(client))
