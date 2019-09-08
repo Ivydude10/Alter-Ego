@@ -24,10 +24,10 @@ class Utility(commands.Cog):
 
     @commands.Cog.listener()
     async def on_member_join(self, ctx):
-        if ctx.guild.name == "The Tavern":
+        if ctx.guild.name == "Banana Army":
             for channel in ctx.guild.channels:
-                if str(channel) == "the-bar":
-                    await client.get_channel(612524089730531348).send(f"""Hello and Welcome {ctx.mention}! To The Tavern!""")
+                if str(channel) == "hellos-and-goodbyes":
+                    await client.get_channel(518457529727057951).send(f"""Hello and Welcome {ctx.mention}! To Banana Army!""")
 
     @commands.command(brief="Only for use in the tavern")
     async def sethex(self, ctx, val: str):
