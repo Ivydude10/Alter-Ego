@@ -158,6 +158,14 @@ class Utility(commands.Cog):
         await ctx.send(embed=embeded)
 
     @commands.command()
+    async def serverpic(self, ctx):
+        embeded = discord.Embed(
+            title = ctx.guild.name + "\'s server image."
+        )
+        embeded.set_image(url=ctx.guild.icon_url)
+        await ctx.send(embed=embeded)
+
+    @commands.command()
     async def removerole(self, ctx, rolename=""):
         user = ctx.message.author
         check = 1
