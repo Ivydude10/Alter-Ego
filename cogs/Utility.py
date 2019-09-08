@@ -162,7 +162,7 @@ class Utility(commands.Cog):
         embeded = discord.Embed(
             title = ctx.guild.name + "\'s server image."
         )
-        embeded.set_image(url=ctx.guild.icon_url_as(*,format=None,static_format='png',size=4096))
+        embeded.set_image(url=ctx.guild.icon_url_as(format=None,static_format='png',size=4096))
         await ctx.send(embed=embeded)
 
     @commands.command()
