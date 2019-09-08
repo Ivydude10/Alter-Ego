@@ -27,7 +27,7 @@ class Utility(commands.Cog):
         if ctx.guild.name == "Banana Army":
             for channel in ctx.guild.channels:
                 if str(channel) == "hellos-and-goodbyes":
-                    await client.get_channel(518457529727057951).send(f"""Hello and Welcome {ctx.mention}! To Banana Army!""")
+                    await self.client.get_channel(518457529727057951).send(f"""Hello and Welcome {ctx.mention}! To Banana Army!""")
 
     @commands.command(brief="Only for use in the tavern")
     async def sethex(self, ctx, val: str):
