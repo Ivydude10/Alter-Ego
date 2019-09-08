@@ -28,7 +28,15 @@ class Utility(commands.Cog):
         if ctx.guild.name == "Banana Army":
             for channel in ctx.guild.channels:
                 if str(channel) == "hellos-and-goodbyes":
-                    await self.client.get_channel(518457529727057951).send(f"""Hello and Welcome {ctx.mention}! To Banana Army! :mudkip:""")
+                    await self.client.get_channel(518457529727057951).send(f"""Hello and Welcome {ctx.mention}! To **Banana Army**! :mudkip:""")
+
+    @commands.Cog.listener()
+    async def on_member_remove(self, ctx):
+        if ctx.guild.name == "Banana Army":
+            for channel in ctx.guild.channels:
+                if str(channel) == "hellos-and-goodbyes":
+                    await self.client.get_channel(518457529727057951).send(f"""**{ctx.display_name}** has left **Banana Army**""")
+
 
     @commands.command(brief="Only for use in the tavern")
     async def sethex(self, ctx, val: str):
