@@ -43,7 +43,7 @@ class Utility(commands.Cog):
                     We are now currently at **{number}** members. Rock on, gamers ;))""")
 
     @commands.Cog.listener()
-    async def suggest(self, ctx)
+    async def suggest(self, ctx):
         if ctx.guild.name == "Banana Army":
             for channel in ctx.guild.channels:
                 if str(channel) == "suggestions-and-voting":
