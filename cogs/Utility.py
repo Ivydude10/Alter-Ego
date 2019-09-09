@@ -46,7 +46,7 @@ class Utility(commands.Cog):
     async def on_message(self, ctx):
         if ctx.guild.name == "Banana Army":
             for channel in ctx.guild.channels:
-                if channel.id == 518196017879842854:
+                if str(channel) == "suggestions-and-voting":
                     await ctx.add_reaction('✅')
                     await ctx.add_reaction('❌')
 
