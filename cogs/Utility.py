@@ -43,10 +43,10 @@ class Utility(commands.Cog):
                     We are now currently at **{number}** members. Rock on, gamers ;))""")
 
     @commands.Cog.listener()
-    async def suggest(self, ctx):
+    async def on_message(self, ctx):
         if ctx.guild.name == "Banana Army":
             for channel in ctx.guild.channels:
-                if str(channel) == "suggestions-and-voting":
+                if channel.id == 518196017879842854:
                     await ctx.message.add_reaction('✅')
                     await ctx.message.add_reaction('❌')
 
