@@ -45,10 +45,9 @@ class Utility(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self, ctx):
         if ctx.guild.name == "Banana Army":
-            for channel in ctx.guild.channels:
-                if str(channel) == "suggestions-and-voting":
-                    await ctx.add_reaction('✅')
-                    await ctx.add_reaction('❌')
+            if str(ctx.channel) == "suggestions-and-voting":
+                await ctx.add_reaction('✅')
+                await ctx.add_reaction('❌')
 
 
     @commands.command(brief="Only for use in the tavern")
