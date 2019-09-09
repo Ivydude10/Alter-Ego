@@ -47,8 +47,8 @@ class Utility(commands.Cog):
         if ctx.guild.name == "Banana Army":
             for channel in ctx.guild.channels:
                 if channel.id == 518196017879842854:
-                    await ctx.message.add_reaction('✅')
-                    await ctx.message.add_reaction('❌')
+                    await ctx.add_reaction('✅')
+                    await ctx.add_reaction('❌')
 
 
     @commands.command(brief="Only for use in the tavern")
