@@ -42,6 +42,14 @@ class Utility(commands.Cog):
 
                     We are now currently at **{number}** members. Rock on, gamers ;))""")
 
+    @commands.Cog.listener()
+    async def suggest(self, ctx)
+        if ctx.guild.name == "Banana Army":
+            for channel in ctx.guild.channels:
+                if str(channel) == "suggestions-and-voting":
+                    await ctx.message.add_reaction('✅')
+                    await ctx.message.add_reaction('❌')
+
 
     @commands.command(brief="Only for use in the tavern")
     async def sethex(self, ctx, val: str):
