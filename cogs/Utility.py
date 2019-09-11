@@ -53,6 +53,7 @@ class Utility(commands.Cog):
     @commands.command(brief="Only for use in the tavern")
     async def sethex(self, ctx, val: str):
         value = discord.Colour(value=int(val, 16))
+        check = 0
         embeded = discord.Embed(
             title='Colour Changed',
             colour=value
@@ -62,31 +63,29 @@ class Utility(commands.Cog):
         for role in ctx.guild.roles:
             if role.name == "Ivy" and ctx.message.author.id == 202428607610486786:
                 await role.edit(colour=value)
-                await ctx.send(embed=embeded)
             elif role.name == "timtams" and ctx.message.author.id == 344984109833256961:
                 await role.edit(colour=value)
-                await ctx.send(embed=embeded)
             elif role.name == "Chickaen" and ctx.message.author.id == 517853706817896460:
                 await role.edit(colour=value)
-                await ctx.send(embed=embeded)
             elif role.name == "Red" and ctx.message.author.id == 505109455982034944:
                 await role.edit(colour=value)
-                await ctx.send(embed=embeded)
             elif role.name == "Mental" and ctx.message.author.id == 424959492606656522:
                 await role.edit(colour=value)
-                await ctx.send(embed=embeded)
             elif role.name == "Jay" and ctx.message.author.id == 518198365272539147:
                 await role.edit(colour=value)
-                await ctx.send(embed=embeded)
             elif role.name == "Carl" and ctx.message.author.id == 393827547873280000:
                 await role.edit(colour=value)
-                await ctx.send(embed=embeded)
             elif role.name == "idoncare" and ctx.message.author.id == 117046427837792256:
                 await role.edit(colour=value)
-                await ctx.send(embed=embeded)
             elif role.name == "Brush" and ctx.message.author.id == 585171748060659752:
                 await role.edit(colour=value)
-                await ctx.send(embed=embeded)
+            elif role.name == "Tomer" and ctx.message.author.id == 212974870869311489:
+                await role.edit(colour=value)
+            else:
+                await ctx.send("Unable to process request")
+                check = 1
+        if check == 0:
+            await ctx.send(embed=embeded)
 
     @commands.command()
     async def time(self, ctx, name=""):
