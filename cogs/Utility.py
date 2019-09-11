@@ -81,11 +81,7 @@ class Utility(commands.Cog):
                 await role.edit(colour=value)
             elif role.name == "Tomer" and ctx.message.author.id == 212974870869311489:
                 await role.edit(colour=value)
-            else:
-                await ctx.send("Unable to process request")
-                check = 1
-        if check == 0:
-            await ctx.send(embed=embeded)
+        await ctx.send(embed=embeded)
 
     @commands.command()
     async def time(self, ctx, name=""):
