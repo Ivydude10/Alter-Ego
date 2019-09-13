@@ -14,7 +14,7 @@ from discord import Game
 from discord.ext import commands
 from discord.ext.commands import Bot
 
-BOT_PREFIX = ("~", "&")
+BOT_PREFIX = ("~", "&", "ivybot")
 
 client = Bot(command_prefix=BOT_PREFIX)
 
