@@ -28,6 +28,20 @@ class Fun(commands.Cog):
         msg = '*' + str + '*'
         await ctx.message.delete()
         await ctx.send(str)
+        
+    @commands.command(name='eightball',
+                      aliases=['8ball'])
+    async def eightball(self, ctx):
+        possible_responses = [
+            'Duh',
+            'Is the sky blue?',
+            'Is grass green?',
+            'Who do you think you are? A Nigerian prince?',
+            'Not a chance bossypants.',
+            #'neat',
+            #'-pat-',
+        ]
+        await ctx.send(random.choice(possible_responses))
 
     @commands.command(name='hug',
                     aliases=['hugs'],
