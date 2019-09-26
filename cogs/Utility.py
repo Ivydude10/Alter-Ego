@@ -214,7 +214,7 @@ class Utility(commands.Cog):
         embeded.add_field(name="Server Name: ", value=member.display_name)
         embeded.add_field(name="Created at: ", value=member.created_at.strftime("%a, %#d %B %Y, %I:%M %p UTC"))
         embeded.add_field(name="Joined at: ", value=member.joined_at.strftime("%a, %#d %B %Y, %I:%M %p UTC"))
-        embeded.add_field(name=f"Roles ((len(roles)))", value=" ".join([role.mention for role in roles]))
+        embeded.add_field(name=f"Roles ({len(roles)})", value=" ".join([role.mention for role in roles]))
         await ctx.send(embed=embeded)
 
 def setup(client):
