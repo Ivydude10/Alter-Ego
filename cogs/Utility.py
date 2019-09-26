@@ -81,6 +81,8 @@ class Utility(commands.Cog):
                 await role.edit(colour=value)
             elif role.name == "Tomer" and ctx.message.author.id == 212974870869311489:
                 await role.edit(colour=value)
+            elif role.name == "Memes" and ctx.message.author.id == 480913237664071680:
+                await role.edit(colour=value)
         await ctx.send(embed=embeded)
 
     @commands.command()
