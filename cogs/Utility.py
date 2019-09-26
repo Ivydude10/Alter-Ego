@@ -202,5 +202,18 @@ class Utility(commands.Cog):
                 await ctx.send(embed=embeded)
                 await user.remove_roles(role1)
 
+    @commands.command()
+    async def userinfo(self, ctx, member:discord.Member = None):
+        roles - [role for role in member.roles]
+        embeded = discord.Ember(colour=member.colour, timestamp=ctx.message.created_at)
+        embeded.set_author(name=f"User Info - {member}")
+        embeded.set_thumbnail(url=member.avatar_url)
+        embeded.add_field(name="ID: ", value=member.id)
+        embeded.add_field(name="Server Name: ", value=member.display_name)
+        embeded.add_field(name="Created at: ", value=member.created_at.strftime("%a, %#d %B %Y, %I:%M %p UTC"))
+        embeded.add_field(name="Joined at: ", value=member.joined_at.strftime("%a, %#d %B %Y, %I:%M %p UTC"))
+        embeded.add_field(name=f"Roles ((len(roles)))", value=" ".join([role.mention for role in roles]))
+        await ctx.send(embed=embeded)
+
 def setup(client):
     client.add_cog(Utility(client))
