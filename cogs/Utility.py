@@ -59,7 +59,7 @@ class Utility(commands.Cog):
             colour=value
         )
         embeded.set_thumbnail(url="https://www.colorhexa.com/" + val + ".png")
-        embeded.add_field(name='Role Colour Changed', value='Successfully changed' + ctx.message.author.display_name + '\'s role colour to **' + str(value) + "**")
+        embeded.add_field(name='Role Colour Changed', value='Successfully changed ' + ctx.message.author.display_name + '\'s role colour to **' + str(value) + "**")
         for role in ctx.guild.roles:
             if role.name == "Ivy" and ctx.message.author.id == 202428607610486786:
                 await role.edit(colour=value)
