@@ -207,7 +207,7 @@ class Utility(commands.Cog):
         if member == None:
             member = ctx.author
         roles = [role for role in member.roles]
-        embeded = discord.Ember(colour=member.colour, timestamp=ctx.message.created_at)
+        embeded = discord.Embed(colour=member.colour, timestamp=ctx.message.created_at)
         embeded.set_author(name=f"User Info - {member}")
         embeded.set_thumbnail(url=member.avatar_url)
         embeded.add_field(name="ID: ", value=member.id)
