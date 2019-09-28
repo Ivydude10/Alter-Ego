@@ -28,7 +28,7 @@ class Fun(commands.Cog):
         msg = '*' + str + '*'
         await ctx.message.delete()
         await ctx.send(str)
-        
+
     @commands.command(name='eightball',
                       aliases=['8ball'])
     async def eightball(self, ctx):
@@ -71,6 +71,20 @@ class Fun(commands.Cog):
          else:
             await ctx.send(f"<@{author.id}> pats <@{member.id}>")
             await ctx.send("-pat- -pat-")
+
+    @commands.command()
+    async def slap(self, ctx, member : discord.Member):
+         author = ctx.message.author
+    #    if member.id == "359217949246226434":
+    #        await ctx.send(f"*hugs {member}*")
+         if member.id == ctx.message.author.id:
+            await ctx.send(f"<@{member.id}> slaps themselves. Ow! That hurts... ")
+    #     elif member.id == 424959492606656522 or author.id == 424959492606656522:
+    #        await ctx.send(f"UwU <@{author.id}> pats <@{member.id}> UwU")
+    #        await ctx.send("-pat- -pat-")
+         else:
+            await ctx.send(f"<@{author.id}> slaps <@{member.id}>!")
+            await ctx.send("Ouch!")
 
     @commands.command()
     async def story(self, ctx):
