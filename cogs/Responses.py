@@ -67,7 +67,7 @@ class Responses(commands.Cog):
     @commands.command()
     async def think(self, ctx):
         msg = """
-    ▒▒▒▒▒▒▒▒▄▄▄▄▄▄▄▄▒▒▒▒▒▒▒▒
+      ▒▒▒▒▒▒▒▒▄▄▄▄▄▄▄▄▒▒▒▒▒▒▒▒
     ▒▒▒▒▒▄█▀▀░░░░░░▀▀█▄▒▒▒▒▒
     ▒▒▒▄█▀▄██▄░░░░░░░░▀█▄▒▒▒
     ▒▒█▀░▀░░▄▀░░░░▄▀▀▀▀░▀█▒▒
@@ -129,7 +129,8 @@ class Responses(commands.Cog):
         ]
         await ctx.send(random.choice(possible_responses))
 
-    @commands.command()
+    @commands.command(name='goodbot',
+                      aliases=['bestbot'])
     async def goodbot(self, ctx):
         possible_responses = [
             'YEET!!',
