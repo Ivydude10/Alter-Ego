@@ -91,7 +91,7 @@ class Utility(commands.Cog):
         name = name.lower()
         if name == "lime" or name == "carl" or name == "mental" or name == "wale" or name == "wubba" or name == "rubik" or name == "fluffy" or name == "bb":
             tz = pytz.timezone('US/Eastern')
-        elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush" or name == "haiku":
+        elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush" or name == "haiku" or name =="chickaen" or name == "septa":
             tz = pytz.timezone('US/Central')
         elif name == "ivy" or name == "tt" or name == "equus":
             tz = pytz.timezone('Australia/NSW')
