@@ -61,7 +61,8 @@ class Fun(commands.Cog):
              colour=discord.Colour.default()
          )
          possible_responses = [
-             "https://tenor.com/view/milk-and-mocha-bear-couple-line-hug-cant-breathe-gif-12687187",
+             "https://media1.tenor.com/images/11b756289eec236b3cd8522986bc23dd/tenor.gif?itemid=10592083",
+             "https://media1.tenor.com/images/fd47e55dfb49ae1d39675d6eff34a729/tenor.gif?itemid=12687187",
              "https://tenor.com/view/milk-and-mocha-hug-cute-kawaii-love-gif-12535134",
              "https://tenor.com/view/hug-peachcat-cat-cute-gif-13985247",
              "https://tenor.com/view/virtual-hug-gif-5026057",
@@ -84,7 +85,6 @@ class Fun(commands.Cog):
              "https://tenor.com/view/monika-hug-doki-doki-literature-club-gif-14883661",
              "https://tenor.com/view/puuung-love-puung-cuddle-morning-gif-13889660",
              "https://tenor.com/view/cheer-up-comfort-hug-couple-love-gif-4215407",
-             "https://tenor.com/view/warm-hug-gif-10592083",
              "https://tenor.com/view/hug-gibbons-hugging-monies-hugs-gif-7693050",
              "https://tenor.com/view/hug-cuddle-comfort-love-friends-gif-5166500",
              "https://tenor.com/view/hug-anime-gif-7552075",
