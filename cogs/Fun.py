@@ -98,7 +98,7 @@ class Fun(commands.Cog):
          ]
          hug = random.choice(possible_responses)
          embeded.set_image(url=hug)
-         embeded.add_field(name="", value=msg, inline=False)
+         embeded.add_field(name=msg, value="", inline=False)
          await ctx.send(embed=embeded)
 
 
