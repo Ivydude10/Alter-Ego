@@ -98,8 +98,8 @@ class Fun(commands.Cog):
              "https://tenor.com/view/seraph-love-hug-hugging-anime-gif-4900166",
          ]
          hug = random.choice(possible_responses)
-         embeded.set_image(url=hug)
          await ctx.send(embed=embeded)
+         await ctx.send(hug)
 
 
     @commands.command()
