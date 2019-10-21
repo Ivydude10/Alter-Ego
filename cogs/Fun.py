@@ -50,15 +50,16 @@ class Fun(commands.Cog):
          author = ctx.message.author
     #    if member.id == "359217949246226434":
     #        await ctx.send(f"*hugs {member}*")
-         embeded = discord.Embed(
-              colour=discord.Colour.default()
-         )
          if member.id == ctx.message.author.id:
               msg = "**" + author.guild.name + "** hugs themselves and starts crying ;-;"
          elif member.id == 424959492606656522 or author.id == 424959492606656522:
               msg = "UwU **" + author.guild.name + "** hugs **" + member.guild.name + "** UwU"
          else:
               msg = "**" + author.guild.name + "** hugs **" + member.guild.name + "**"
+         embeded = discord.Embed(
+             title=msg,
+             colour=discord.Colour.default()
+         )
          possible_responses = [
              "https://tenor.com/view/milk-and-mocha-bear-couple-line-hug-cant-breathe-gif-12687187",
              "https://tenor.com/view/milk-and-mocha-hug-cute-kawaii-love-gif-12535134",
@@ -98,7 +99,6 @@ class Fun(commands.Cog):
          ]
          hug = random.choice(possible_responses)
          embeded.set_image(url=hug)
-         embeded.add_field(name=msg, value="", inline=False)
          await ctx.send(embed=embeded)
 
 
