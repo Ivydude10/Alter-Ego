@@ -101,6 +101,25 @@ class Fun(commands.Cog):
          await ctx.send(embed=embeded)
          await ctx.send(hug)
 
+    @commands.command(name='hugtest',
+                    aliases=['hugstest'],
+                    brief="Hugs mentioned user")
+    async def hugtest(self, ctx, member : discord.Member):
+         author = ctx.message.author
+    #    if member.id == "359217949246226434":
+    #        await ctx.send(f"*hugs {member}*")
+         if member.id == ctx.message.author.id:
+              msg = "**" + author.display_name + "** hugs themselves and starts crying ;-;"
+         elif member.id == 424959492606656522 or author.id == 424959492606656522:
+              msg = "UwU **" + author.display_name + "** hugs **" + member.display_name + "** UwU"
+         else:
+              msg = "**" + author.display_name + "** hugs **" + member.display_name + "**"
+         embeded = discord.Embed(
+             title=msg,
+             colour=discord.Colour.default()
+         )
+         embed.set_image(url="https://media1.tenor.com/images/11b756289eec236b3cd8522986bc23dd/tenor.gif?itemid=10592083")
+         await ctx.send(embed=embeded)
 
     @commands.command()
     async def pat(self, ctx, member : discord.Member):
