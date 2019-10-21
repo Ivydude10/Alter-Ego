@@ -50,13 +50,57 @@ class Fun(commands.Cog):
          author = ctx.message.author
     #    if member.id == "359217949246226434":
     #        await ctx.send(f"*hugs {member}*")
+         embeded = discord.Embed(
+              colour=discord.Colour.default()
+         )
          if member.id == ctx.message.author.id:
-            await ctx.send(f"*<@{member.id}> hugs themselves and starts crying ;-;*")
+              msg = "**" + author.guild.name + "** hugs themselves and starts crying ;-;"
+         elif member.id == 424959492606656522 or author.id == 424959492606656522:
+              msg = "UwU **" + author.guild.name + "** hugs **" + member.guild.name + "** UwU"
          else:
-             if member.id == 424959492606656522 or author.id == 424959492606656522:
-                  await ctx.send(f"UwU *<@{author.id}> hugs <@{member.id}>* UwU")
-             else:
-                  await ctx.send(f"*<@{author.id}> hugs <@{member.id}>*")
+              msg = "**" + author.guild.name + "** hugs **" + member.guild.name + "**"
+         possible_responses = [
+             "https://tenor.com/view/milk-and-mocha-bear-couple-line-hug-cant-breathe-gif-12687187",
+             "https://tenor.com/view/milk-and-mocha-hug-cute-kawaii-love-gif-12535134",
+             "https://tenor.com/view/hug-peachcat-cat-cute-gif-13985247",
+             "https://tenor.com/view/virtual-hug-gif-5026057",
+             "https://tenor.com/view/wyatt-logan-timeless-matt-lanter-lucy-preston-abigail-spencer-gif-12254044",
+             "https://tenor.com/view/big-hero6-baymax-feel-better-hug-hugging-gif-4782499",
+             "https://tenor.com/view/warm-hug-gif-10592083",
+             "https://tenor.com/view/hugs-hug-ghost-hug-gif-4451998",
+             "https://tenor.com/view/dog-hug-bff-bestfriend-friend-gif-9512793",
+             "https://tenor.com/view/cuddle-party-finding-dory-disney-hug-gif-7278312",
+             "https://tenor.com/view/friends-joey-chandler-hug-gif-3877439",
+             "https://tenor.com/view/hugs-gif-9322908",
+             "https://tenor.com/view/hug-gif-5026053",
+             "https://tenor.com/view/cat-hug-back-hug-notice-me-attention-to-me-gif-14227401",
+             "https://tenor.com/view/hugs-notmine-kpop-korea-gif-4593622",
+             "https://tenor.com/view/cat-hug-love-cuddle-snuggle-gif-8656017",
+             "https://tenor.com/view/minions-hug-gif-4127473",
+             "https://tenor.com/view/polar-bears-hug-hugging-cuddle-comfortable-gif-3904776",
+             "https://tenor.com/view/virtual-hug-random-hug-gif-7939558",
+             "https://tenor.com/view/puuung-puung-love-you-hug-comfort-gif-13883173",
+             "https://tenor.com/view/monika-hug-doki-doki-literature-club-gif-14883661",
+             "https://tenor.com/view/puuung-love-puung-cuddle-morning-gif-13889660",
+             "https://tenor.com/view/cheer-up-comfort-hug-couple-love-gif-4215407",
+             "https://tenor.com/view/warm-hug-gif-10592083",
+             "https://tenor.com/view/hug-gibbons-hugging-monies-hugs-gif-7693050",
+             "https://tenor.com/view/hug-cuddle-comfort-love-friends-gif-5166500",
+             "https://tenor.com/view/hug-anime-gif-7552075",
+             "https://tenor.com/view/anime-jump-small-gif-11098589",
+             "https://tenor.com/view/hug-anime-gif-11074788",
+             "https://tenor.com/view/hug-anime-gif-7552093",
+             "https://tenor.com/view/noragami-yato-yukine-hug-squeeze-gif-13576354",
+             "https://tenor.com/view/hug-cry-sad-anime-tackle-gif-5634582",
+             "https://tenor.com/view/kanna-kobayashi-anime-hug-love-gif-7883854",
+             "https://tenor.com/view/kanna-kobayashi-anime-hug-love-gif-7883854",
+             "https://tenor.com/view/seraph-love-hug-hugging-anime-gif-4900166",
+         ]
+         hug = random.choice(possible_responses)
+         embeded.set_image(url=hug)
+         embeded.add_field(value=msg, inline=False)
+         await ctx.send(embed=embeded)
+
 
     @commands.command()
     async def pat(self, ctx, member : discord.Member):
