@@ -118,7 +118,7 @@ class Fun(commands.Cog):
              title=msg,
              colour=discord.Colour.default()
          )
-         embed.set_image(url="https://media1.tenor.com/images/11b756289eec236b3cd8522986bc23dd/tenor.gif?itemid=10592083")
+         embeded.set_image(url="https://media1.tenor.com/images/11b756289eec236b3cd8522986bc23dd/tenor.gif?itemid=10592083")
          await ctx.send(embed=embeded)
 
     @commands.command()
