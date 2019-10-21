@@ -51,11 +51,11 @@ class Fun(commands.Cog):
     #    if member.id == "359217949246226434":
     #        await ctx.send(f"*hugs {member}*")
          if member.id == ctx.message.author.id:
-              msg = "**" + author.guild.name + "** hugs themselves and starts crying ;-;"
+              msg = "**" + author.display_name + "** hugs themselves and starts crying ;-;"
          elif member.id == 424959492606656522 or author.id == 424959492606656522:
-              msg = "UwU **" + author.guild.name + "** hugs **" + member.guild.name + "** UwU"
+              msg = "UwU **" + author.display_name + "** hugs **" + member.display_name + "** UwU"
          else:
-              msg = "**" + author.guild.name + "** hugs **" + member.guild.name + "**"
+              msg = "**" + author.display_name + "** hugs **" + member.display_name + "**"
          embeded = discord.Embed(
              title=msg,
              colour=discord.Colour.default()
