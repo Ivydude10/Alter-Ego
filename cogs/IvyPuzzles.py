@@ -47,7 +47,9 @@ class IvyPuzzles(commands.Cog):
 
 
             What? You want a hint of some kind?
-            Ugh, fine. You might wanna revist the links of the previous puzzles... ;)"""
+            Ugh, fine. You might wanna revist the links of the previous puzzles... ;)
+
+            P.S. You might wanna keep this to yourself. Only one person can claim the secret."""
             await ctx.message.author.send(message)
         else:
             resp = "Invalid Number"
