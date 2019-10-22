@@ -34,7 +34,8 @@ class IvyPuzzles(commands.Cog):
             resp = "https://bit.ly/IP3_InitiateTesting"
         elif msg == "4":
             resp = "Invalid Number"
-            message = """ So, you tried to be clever huh?
+            message = """
+            So, you tried to be clever huh?
             Thought you could gain early access to IP4?
             Well too bad, since it isnt available yet.
             However, I'll give you a little something for trying this out....
