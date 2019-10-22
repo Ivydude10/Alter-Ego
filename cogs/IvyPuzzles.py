@@ -34,7 +34,7 @@ class IvyPuzzles(commands.Cog):
             resp = "https://bit.ly/IP3_InitiateTesting"
         else:
             resp = "Invalid number"
-        ctx.send(resp)
+        await ctx.send(resp)
 
 
 def setup(client):
