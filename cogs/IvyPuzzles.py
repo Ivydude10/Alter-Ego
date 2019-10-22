@@ -26,13 +26,13 @@ class IvyPuzzles(commands.Cog):
         resp = ""
         if msg == "":
             resp = "Please enter a number and try again."
-        elif msg == "1";
+        elif msg == "1":
             resp = "https://bit.ly/IP1_start"
-        elif msg == "2";
+        elif msg == "2":
             resp = "https://bit.ly/IP2_SystemStart"
-        elif msg == "3";
+        elif msg == "3":
             resp = "https://bit.ly/IP3_InitiateTesting"
-        else
+        else:
             resp = "Invalid number"
         ctx.send(resp)
 
