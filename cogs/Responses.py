@@ -142,6 +142,11 @@ class Responses(commands.Cog):
         await ctx.send(random.choice(possible_responses))
 
     @commands.command()
+    async def say(self, ctx, *msg)
+        await ctx.message.delete()
+        await ctx.send(msg)
+
+    @commands.command()
     async def badbot(self, ctx):
         possible_responses = [
             ":(",
