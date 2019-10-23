@@ -33,8 +33,7 @@ class IvyPuzzles(commands.Cog):
         elif msg == "3":
             resp = "https://bit.ly/IP3_InitiateTesting"
         elif msg == "4":
-            resp =
-            """
+            resp = """
 It's time. The moment you've all been waiting for.
 The release of IP4 is now.
 Passwords are the same as usual, bit.ly/IP4_???
