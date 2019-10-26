@@ -143,9 +143,12 @@ class Responses(commands.Cog):
 
     @commands.command()
     async def say(self, ctx, *msg):
-        str = ' '.join(msg)
-        await ctx.message.delete()
-        await ctx.send(str)
+        if ctx.message.author.id == 345993541643665410:
+            await ctx.send("")
+        else:
+            str = ' '.join(msg)
+            await ctx.message.delete()
+            await ctx.send(str)
 
     @commands.command()
     async def badbot(self, ctx):
