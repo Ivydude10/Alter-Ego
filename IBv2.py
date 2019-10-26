@@ -53,7 +53,7 @@ async def unload(ctx, extension):
 #            print("Payload delivered successfully, code {}.".format(result.status_code))
 @client.event
 async def on_ready():
-    await client.change_presence(activity=Game(name="with the idea of Hope"))
+    await client.change_presence(activity=Game(name="with the idea of Despair"))
     print("Logged in as " + client.user.name)
 
 for filename in os.listdir('./cogs'):
