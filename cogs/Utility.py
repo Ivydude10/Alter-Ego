@@ -97,8 +97,12 @@ class Utility(commands.Cog):
             tz = pytz.timezone('Australia/NSW')
         elif name == "tomer":
             tz = pytz.timezone('Israel')
-        elif name == "memes" or name == "twg" or name == "zamas":
+        elif name == "memes" or name == "twg" or name == "zamas" or name == "ded":
             tz = pytz.timezone('PST8PDT')
+        elif name == "octo":
+            tz = pytz.timezone('MST7MDT')
+        elif name == "acoustic":
+            tz = pytz.timezone('Singapore')
         elif name == "sma":
             tz = pytz.timezone('Asia/Singapore')
         elif name == "mlg":
