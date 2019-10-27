@@ -144,6 +144,8 @@ class Utility(commands.Cog):
             role = "Pok3cord"
         elif rolename == "nsfw":
             role = "Bathroom Key (NSFW)"
+        elif rolename == "IP":
+            role = "IP Notification"
         else:
             await ctx.send("Invalid Role")
             check = 0
@@ -193,6 +195,8 @@ class Utility(commands.Cog):
             role = "Pok3cord"
         elif rolename == "nsfw":
             role = "Bathroom Key (NSFW)"
+        elif rolename == "IP":
+            role = "IP Notification"
         else:
             await ctx.send("Invalid Role")
             check = 0
