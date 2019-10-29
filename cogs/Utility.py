@@ -113,6 +113,8 @@ class Utility(commands.Cog):
             tz = pytz.timezone('Europe/Amsterdam')
         elif name == "marco":
             tz = pytz.timezone('Asia/Novosibirsk')
+        elif name == "ash":
+            tz = pytz.timezone('US/Hawaii')
         else:
             await ctx.send("Invalid Name")
             check = 0
