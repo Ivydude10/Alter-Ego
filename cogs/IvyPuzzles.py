@@ -74,8 +74,8 @@ For this, four different routes have been created, based on different genres.
     Anime - opening songs to different anime series
     TV Shows - the opening track to a variety of TV Shows
     Mainstream - any other type of music that doesn't fit in the above categories
-To start, head over to bit.ly/IP5_GuessThat(Insert your route of choice here)
-As usual, all links are of the form bit.ly/IP5_(Password).
+To start, head over to bit.ly/IP5\_GuessThat(Insert your route of choice here)
+As usual, all links are of the form bit.ly/IP5\_(Password).
 First one to DM me with any of the ending images, wins.
 And the first one to DM me the bonus phrase, gets a special bonus, TBA.
 Good luck, and have fun!
