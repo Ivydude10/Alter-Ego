@@ -62,8 +62,7 @@ https://bit.ly/IP4_ReadyOrNot
     P.S. You might wanna keep this to yourself. Only one person can claim the secret."""
             await ctx.message.author.send(message)
         elif msg == "5":
-            if ctx.message.author.id == 202428607610486786:
-                resp = """
+            resp = """
 And we are back! With another *beautiful* Ivy Puzzle.
 This time, we are on number 5! And for that, we have a special edition.
 This time, it's less about the ciphers, and more about your music knowledge.
@@ -76,14 +75,12 @@ For this, four different routes have been created, based on different genres.
     Mainstream - any other type of music that doesn't fit in the above categories
 To start, head over to bit.ly/IP5\_GuessThat(Insert your route of choice here)
 As usual, all links are of the form bit.ly/IP5\_(Password).
-First one to DM me with any of the ending images, wins.
+First one to DM me with any of the 4 ending images, wins.
 And the first one to DM me the bonus phrase, gets a special bonus, TBA.
 Good luck, and have fun!
 
-<@638162985260417046>
 """
-            else:
-                resp = "You do not have permission to view this yet."
+
         else:
             resp = "Invalid Number"
         await ctx.send(resp)
