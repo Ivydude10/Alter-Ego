@@ -68,11 +68,12 @@ This time, we are on number 5! And for that, we have a special edition.
 This time, it's less about the ciphers, and more about your music knowledge.
 That's right! This, is a Guess That Song Challenge!
 
-For this, four different routes have been created, based on different genres.
-    Video Game - music from various Video Game OSTs
-    Anime - opening songs to different anime series
-    TV Shows - the opening track to a variety of TV Shows
-    Mainstream - any other type of music that doesn't fit in the above categories
+For this, four different routes have been created, based on different genres:
+        Video Game - music from various Video Game OSTs
+        Anime - opening songs to different anime series
+        TV Shows - the opening track to a variety of TV Shows
+        Mainstream - any other type of music that doesn't fit in the above categories
+
 To start, head over to bit.ly/IP5\_GuessThat(Insert your route of choice here)
 As usual, all links are of the form bit.ly/IP5\_(Password).
 First one to DM me with any of the 4 ending images, wins.
