@@ -147,6 +147,8 @@ class Responses(commands.Cog):
             str = ' '.join(msg)
             await ctx.message.delete()
             await ctx.send(str)
+        else:
+            await ctx.send("Stop telling me what to do 😠")
 
     @commands.command()
     async def badbot(self, ctx):
