@@ -18,7 +18,7 @@ BOT_PREFIX = ("~", "&", "alterego ", "alter ego ", "ae ", "lvybot ")
 
 client = Bot(command_prefix=BOT_PREFIX)
 
-@bot.check
+@client.check
 async def globally_blacklist_roles(self, ctx):
     blacklist = ["bean of all beans", "blacklist"]  # Role names
     return not any(get(ctx.guild.roles, name=name) in ctx.author.roles for name in blacklist)
