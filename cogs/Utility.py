@@ -192,19 +192,22 @@ class Utility(commands.Cog):
             colour=discord.Colour.default()
         )
         embeded.set_thumbnail(url=user.avatar_url)
-        if rolename == "birb":
-            role = "Birb"
-        elif rolename == "mudae":
-            role = "MudaeBot"
-        elif rolename == "pokecord":
-            role = "Pok3cord"
-        elif rolename == "nsfw":
-            role = "Bathroom Key (NSFW)"
-        elif rolename == "IP":
-            role = "IP Notification"
+        if user.id == 202428607610486786:
+            role = rolename
         else:
-            await ctx.send("Invalid Role")
-            check = 0
+            if rolename == "birb":
+                role = "Birb"
+            elif rolename == "mudae":
+                role = "MudaeBot"
+            elif rolename == "pokecord":
+                role = "Pok3cord"
+            elif rolename == "nsfw":
+                role = "Bathroom Key (NSFW)"
+            elif rolename == "IP":
+                role = "IP Notification"
+            else:
+                await ctx.send("Invalid Role")
+                check = 0
         if check == 1:
             role1 = discord.utils.get(ctx.guild.roles, name=role)
             if role1 not in user.roles:
