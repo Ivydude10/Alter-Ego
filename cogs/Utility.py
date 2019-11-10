@@ -17,23 +17,10 @@ from discord.ext.commands import Bot
 BOT_PREFIX = ("~", "&")
 client = Bot(command_prefix=BOT_PREFIX)
 
-class Blacklisted(commands.CheckFailure): pass
-
 class Utility(commands.Cog):
 
     def __init__(self, client):
         self.client = client
-
-    def __global_check_once(self, ctx):
-        blacklist = ["bean of all beans", "blacklist"]  # Role names
-        if any(get(ctx.guild.roles, name=name) in ctx.author.roles for name in blacklist):
-            raise Blacklisted()
-        else:
-            return True
-
-    async def on_command_error(self, ctx, error):
-        if isinstance(error, Blacklisted):
-            await ctx.send("You cannot use this command.")
 
     @commands.Cog.listener()
     async def on_member_join(self, ctx):
