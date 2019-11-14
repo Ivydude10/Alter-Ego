@@ -143,7 +143,7 @@ class Responses(commands.Cog):
 
     @commands.command()
     async def say(self, ctx, *msg):
-        if ctx.message.author.id == 202428607610486786:
+        if ctx.message.author.id == 202428607610486786 or ctx.message.author.id == 639801918381752340 or ctx.message.author.id == 458964261738250263:
             str = """ """.join(msg)
             await ctx.message.delete()
             await ctx.send(str)
