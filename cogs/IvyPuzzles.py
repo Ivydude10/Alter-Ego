@@ -27,11 +27,28 @@ class IvyPuzzles(commands.Cog):
         if msg == "":
             resp = "Please enter a number and try again."
         elif msg == "1":
-            resp = "https://bit.ly/IP1_start"
+            resp = """
+So uhh... Hello, and Welcome! To Ivy Puzzle 1!
+This is my first real attempt at a short but fun puzzle.
+Hopefully you enjoy this, and please give me some feedback.
+Anyways, go to bit.ly/IP1_start to begin.
+
+P.S. All links are in the form of bit.ly/IP1_(password)"""
         elif msg == "2":
-            resp = "https://bit.ly/IP2_SystemStart"
+            resp = """
+It's that time once again!
+Ivy's Puzzle 2 is offically released.
+Go to bit.ly/IP2_SystemStart to begin.
+And once again, all links are of the form bit.ly/IP2_(insert pass here).
+"""
         elif msg == "3":
-            resp = "https://bit.ly/IP3_InitiateTesting"
+            resp = """
+Ah shoot, here we go again!
+It's time for the third instalment of Ivy's Puzzles.
+You should know the drill by now, all links are of the from bit.ly/IP3_(insertphrasehere).
+The link to start is down below:
+bit.ly/IP3_InitiateTesting
+"""
         elif msg == "4":
             resp = """
 It's time. The moment you've all been waiting for.
@@ -41,7 +58,7 @@ However, this time there's a secret.
 An alternate start to the puzzle, that only few will find.
 First one to dm me the secret image gets a special reward.
 Ready or not? Here. We. Go.
-https://bit.ly/IP4_ReadyOrNot
+bit.ly/IP4_ReadyOrNot
 """
         elif msg =="4secret":
             message = """
