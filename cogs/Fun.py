@@ -141,7 +141,7 @@ class Fun(commands.Cog):
     #    if member.id == "359217949246226434":
     #        await ctx.send(f"*hugs {member}*")
          if member.id == ctx.message.author.id:
-            await ctx.send(f"<@{member.id}> slaps themselves. Ow! That hurts... ")
+            await ctx.send(f"No. I'm sorry, but I will not allow you to hurt yourself. *hugs <@{author.id}>*")
     #     elif member.id == 424959492606656522 or author.id == 424959492606656522:
     #        await ctx.send(f"UwU <@{author.id}> pats <@{member.id}> UwU")
     #        await ctx.send("-pat- -pat-")
