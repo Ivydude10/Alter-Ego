@@ -98,7 +98,7 @@ class Utility(commands.Cog):
         )
         embeded.set_thumbnail(url="https://www.colorhexa.com/" + val + ".png")
         for role in ctx.guild.roles:
-            if role.name == name
+            if role.name == name:
                 await role.edit(colour=value)
                 check = 1
         if check == 1:
