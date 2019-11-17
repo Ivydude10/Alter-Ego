@@ -217,6 +217,16 @@ class Responses(commands.Cog):
         await ctx.send(msg)
 
     @commands.command()
+    async def vhug3(self, ctx):
+        msg = "https://tenor.com/view/virtual-hug-gif-10721549"
+        await ctx.send(msg)
+
+    @commands.command()
+    async def chocolatemilk(self, ctx):
+        msg = "https://cdn.discordapp.com/attachments/643686885788483584/645759049702440980/image0.png"
+        await ctx.send(msg)
+
+    @commands.command()
     async def omemega(self, ctx):
         msg = "https://cdn.discordapp.com/attachments/547986603830935572/547987976005877791/2u7x88.png"
         await ctx.send(msg)
