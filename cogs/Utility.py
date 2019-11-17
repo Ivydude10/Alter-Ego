@@ -55,7 +55,7 @@ class Utility(commands.Cog):
         value = discord.Colour(value=int(val, 16))
         check = 0
         embeded = discord.Embed(
-            title='Colour Changed',
+            title='Change Colour',
             colour=value
         )
         embeded.set_thumbnail(url="https://www.colorhexa.com/" + val + ".png")
@@ -83,6 +83,28 @@ class Utility(commands.Cog):
                 await role.edit(colour=value)
             elif role.name == "Memes" and ctx.message.author.id == 480913237664071680:
                 await role.edit(colour=value)
+        await ctx.send(embed=embeded)
+
+    @commands.command(brief="Only for use in the tavern",
+                      name='setcolor',
+                      aliases=['setcolour'])
+    @commands.has_permissions(manage_guild=True)
+    async def setcolor(self, ctx, name, val: str):
+        value = discord.Colour(value=int(val, 16))
+        check = 0
+        embeded = discord.Embed(
+            title='Change Colour',
+            colour=value
+        )
+        embeded.set_thumbnail(url="https://www.colorhexa.com/" + val + ".png")
+        for role in ctx.guild.roles:
+            if role.name == name
+                await role.edit(colour=value)
+                check = 1
+        if check == 1:
+            embeded.add_field(name='Role Colour Changed', value='Successfully changed colour of **' + name + '** to **' + str(value) + "**")
+        else:
+            embeded.add_field(name='Role Colour Changed', value='Failed to change colour of **' + name + '** as it does not exist')
         await ctx.send(embed=embeded)
 
     @commands.command()
@@ -122,7 +144,8 @@ class Utility(commands.Cog):
             today = datetime.datetime.now(tz)
             await ctx.send(today.strftime("%d-%m-%Y | %I:%M:%S %p"))
 
-    @commands.command()
+    @commands.command(name='randcolour',
+                      aliases=['randcolor'])
     async def randcolour(self, ctx):
         hexval = [ '0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F',]
         msg = ''.join(random.choices(hexval, k=6))
