@@ -111,15 +111,15 @@ class Utility(commands.Cog):
     async def time(self, ctx, name=""):
         check = 1
         name = name.lower()
-        if name == "lime" or name == "carl" or name == "mental" or name == "wale" or name == "wubba" or name == "rubik" or name == "fluffy" or name == "bb":
+        if name == "lime" or name == "carl" or name == "mental" or name == "wale" or name == "wubba" or name == "rubik" or name == "fluffy" or name == "bb" or name == "EST":
             tz = pytz.timezone('US/Eastern')
-        elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush" or name == "haiku" or name =="chickaen" or name == "septa":
+        elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush" or name == "haiku" or name =="chickaen" or name == "septa" or name == "CST":
             tz = pytz.timezone('US/Central')
-        elif name == "ivy" or name == "tt" or name == "equus":
+        elif name == "ivy" or name == "tt" or name == "equus" or name == "AEST":
             tz = pytz.timezone('Australia/NSW')
         elif name == "tomer":
             tz = pytz.timezone('Israel')
-        elif name == "memes" or name == "twg" or name == "zamas" or name == "ded" or name == "merc":
+        elif name == "memes" or name == "twg" or name == "zamas" or name == "ded" or name == "merc" or name == "PST":
             tz = pytz.timezone('PST8PDT')
         elif name == "octo":
             tz = pytz.timezone('MST7MDT')
