@@ -70,7 +70,8 @@ async def help(ctx):
 
 
     await ctx.send("I have dmed you my instructions.")
-    await ctx.message.author.send(embed=argembed, embed=respembed)
+    await ctx.message.author.send(embed=argembed)
+    await ctx.message.author.send(embed=respembed)
 
 @client.command()
 async def load(ctx, extension):
