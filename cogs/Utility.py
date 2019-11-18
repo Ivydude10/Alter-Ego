@@ -71,7 +71,7 @@ class Utility(commands.Cog):
                 await role.edit(colour=value)
             elif role.name == "Mental" and ctx.message.author.id == 424959492606656522:
                 await role.edit(colour=value)
-            elif role.name == "Jay" and ctx.message.author.id == 518198365272539147:
+            elif role.name == "Jay" and ctx.message.author.id == 518198365272539147 or ctx.message.authour.id == 633793859645734912:
                 await role.edit(colour=value)
             elif role.name == "Carl" and ctx.message.author.id == 393827547873280000:
                 await role.edit(colour=value)
