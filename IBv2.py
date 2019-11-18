@@ -42,8 +42,35 @@ async def help(ctx):
     argembed.add_field(name='~b64tt [base64 data]', value='Converts the given string from base64 to text.', inline=False)
     argembed.add_field(name='~ttb64 [text]', value='Converts the given string from text to base64.', inline=False)
 
+    respembed = discord.Embed(
+        colour = discord.Colour.green()
+    )
+    respembed.set_author(name="Help - Miscellaneous")
+    respembed.add_field(name='~hello', value="Hello and welcome!", inline=False)
+    respembed.add_field(name='~omega', value="[Insert Shrug Here]", inline=False)
+    respembed.add_field(name='~nou', value="No you.", inline=False)
+    respembed.add_field(name='~olega', value="How soon?", inline=False)
+    respembed.add_field(name='~hail', value="Hails.", inline=False)
+    respembed.add_field(name='~think', value="Hmm...", inline=False)
+    respembed.add_field(name='~ra_men', value="Never gonna give you up.", inline=False)
+    respembed.add_field(name='~ra_women', value="Never gonna let you down.", inline=False)
+    respembed.add_field(name='~ra_people', value="Never gonna run around and desert you.", inline=False)
+    respembed.add_field(name='~love', value="Love Love!", inline=False)
+    respembed.add_field(name='~goodbot', value="Aww, thank you!", inline=False)
+    respembed.add_field(name='~badbot', value="Why would you be so cruel!", inline=False)
+    respembed.add_field(name='~whatsthis', value="Huh? What's this?", inline=False)
+    respembed.add_field(name='~sleep', value="Influence people to sleep.", inline=False)
+    respembed.add_field(name='~sleepnow', value="Influence people to sleep now!", inline=False)
+    respembed.add_field(name='~patd', value="Pat the D", inline=False)
+    respembed.add_field(name='~vhug', value="A virtual hug!", inline=False)
+    respembed.add_field(name='~vhug2', value="Another virtual hug!", inline=False)
+    respembed.add_field(name='~vhug3', value="Yet another virtual hug!", inline=False)
+    respembed.add_field(name='~chocolatemilk', value="Never underestimate the power of chocolate milk!", inline=False)
+    respembed.add_field(name='~death', value="Those are the rules.", inline=False)
+
+
     await ctx.send("I have dmed you my instructions.")
-    await ctx.message.author.send(embed=argembed)
+    await ctx.message.author.send(embed=argembed, embed=respembed)
 
 @client.command()
 async def load(ctx, extension):
