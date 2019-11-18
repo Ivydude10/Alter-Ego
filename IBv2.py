@@ -33,7 +33,7 @@ async def help(ctx):
     argembed.set_author(name="Help - ARG")
     argembed.add_field(name='~caesar [text] [number]', value='Encodes the given string, using Caesar shift.', inline=False)
     argembed.add_field(name='~caesarbf [text]', value='Decodes the given string, using Caesar shift bruteforce.', inline=False)
-    argembed.add_field(name='~bintext [binary data]', value='Converts the given string from binary to text. Note: Don\'t include spaces.'', inline=False)
+    argembed.add_field(name='~bintext [binary data]', value="Converts the given string from binary to text. Note: Don\'t include spaces.", inline=False)
     argembed.add_field(name='~textbin [text]', value='Converts the given string from text to binary.', inline=False)
     argembed.add_field(name='~htt [hex data]', value='Converts the given string from hex to text.', inline=False)
     argembed.add_field(name='~tth [text]', value='Converts the given string from text to hex.', inline=False)
