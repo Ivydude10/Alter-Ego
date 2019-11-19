@@ -122,7 +122,7 @@ class Fun(commands.Cog):
          await ctx.send(embed=embeded)
 
     @commands.command()
-    async def chug(self, ctx):
+    async def chihug(self, ctx):
         embeded = discord.Embed()
         embeded.set_image(url="https://media.discordapp.net/attachments/625127221505425428/644323044512366602/Chiaki_Hug.gif")
         await ctx.send(embed=embeded)
