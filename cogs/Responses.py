@@ -278,5 +278,12 @@ class Responses(commands.Cog):
         embeded.set_image(url='https://cdn.discordapp.com/attachments/353766146115371009/614279320864555019/image0.png')
         await ctx.send(embed=embeded)
 
+    @commands.command(name="self_deprecation",
+                      aliases=["self-deprecation"])
+    async def self_deprecation(self, ctx):
+        embeded = discord.Embed()
+        embeded.set_image(url="https://cdn.discordapp.com/attachments/503665005015597066/578698184642002975/image0.jpg")
+        await ctx.send(embed=embeded)
+
 def setup(client):
     client.add_cog(Responses(client))

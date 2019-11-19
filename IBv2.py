@@ -66,7 +66,8 @@ async def help(ctx):
     respembed.add_field(name='~vhug2', value="Another virtual hug!", inline=False)
     respembed.add_field(name='~vhug3', value="Yet another virtual hug!", inline=False)
     respembed.add_field(name='~chocolatemilk', value="Never underestimate the power of chocolate milk!", inline=False)
-    respembed.add_field(name='~death', value="Those are the rules.", inline=False)
+    respembed.add_field(name='~death', value="You know the rules.", inline=False)
+    respembed.add_field(name="~self-deprecation", value="and so do I.", inline=False)
 
 
     await ctx.send("I have dmed you my instructions.")
