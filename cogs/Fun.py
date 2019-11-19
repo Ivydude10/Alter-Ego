@@ -115,7 +115,6 @@ class Fun(commands.Cog):
          else:
               msg = "**" + author.display_name + "** hugs **" + member.display_name + "**"
          embeded = discord.Embed(
-             title=msg,
              colour=discord.Colour.default()
          )
          possible_responses = [
@@ -123,6 +122,7 @@ class Fun(commands.Cog):
             "https://media.discordapp.net/attachments/625127221505425428/644323044512366602/Chiaki_Hug.gif",
          ]
          hug = random.choice(possible_responses)
+         embeded.set_author(name=msg)
          embeded.set_image(url=hug)
          await ctx.send(embed=embeded)
 
