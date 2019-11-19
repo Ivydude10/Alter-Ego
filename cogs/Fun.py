@@ -118,7 +118,12 @@ class Fun(commands.Cog):
              title=msg,
              colour=discord.Colour.default()
          )
-         embeded.set_image(url="https://media1.tenor.com/images/11b756289eec236b3cd8522986bc23dd/tenor.gif?itemid=10592083")
+         possible_responses = [
+            "https://media1.tenor.com/images/11b756289eec236b3cd8522986bc23dd/tenor.gif?itemid=10592083",
+            "https://media.discordapp.net/attachments/625127221505425428/644323044512366602/Chiaki_Hug.gif",
+         ]
+         hug = random.choice(possible_responses)
+         embeded.set_image(url=hug)
          await ctx.send(embed=embeded)
 
     @commands.command()
