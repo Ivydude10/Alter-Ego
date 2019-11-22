@@ -37,7 +37,7 @@ P.S. All links are in the form of bit.ly/IP1_(password)"""
         elif msg == "2":
             resp = """
 It's that time once again!
-Ivy's Puzzle 2 is offically released.
+Ivy's Puzzle 2 is officially released.
 Go to bit.ly/IP2_SystemStart to begin.
 And once again, all links are of the form bit.ly/IP2_(insert pass here).
 """
@@ -45,7 +45,7 @@ And once again, all links are of the form bit.ly/IP2_(insert pass here).
             resp = """
 Ah shoot, here we go again!
 It's time for the third instalment of Ivy's Puzzles.
-You should know the drill by now, all links are of the from bit.ly/IP3_(insertphrasehere).
+You should know the drill by now, all links are of the form bit.ly/IP3_(insertphrasehere).
 The link to start is down below:
 bit.ly/IP3_InitiateTesting
 """
