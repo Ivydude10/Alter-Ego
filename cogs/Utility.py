@@ -111,7 +111,7 @@ class Utility(commands.Cog):
     async def time(self, ctx, name=""):
         check = 1
         name = name.lower()
-        if name == "lime" or name == "carl" or name == "mental" or name == "wale" or name == "wubba" or name == "rubik" or name == "fluffy" or name == "bb" or name == "est":
+        if name == "lime" or name == "carl" or name == "mental" or name == "wale" or name == "wubba" or name == "rubik" or name == "shin'a" or name == "shina" or name == "yasu" or name == "fluffy" or name == "bb" or name == "est":
             tz = pytz.timezone('US/Eastern')
         elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush" or name == "haiku" or name =="chickaen" or name == "septa" or name == "cst":
             tz = pytz.timezone('US/Central')
