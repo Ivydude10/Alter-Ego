@@ -66,6 +66,9 @@ async def help(ctx):
     respembed.add_field(name='~vhug2', value="Another virtual hug!", inline=False)
     respembed.add_field(name='~vhug3', value="Yet another virtual hug!", inline=False)
     respembed.add_field(name='~chocolatemilk', value="Never underestimate the power of chocolate milk!", inline=False)
+    respembed.add_field(name="~omemega", value="I heard you like memes?", inline=False)
+    respembed.add_field(name="~kynktwitch", value="A link to Kynk's twitch channel", inline=False)
+    respembed.add_field(name="~kynkyt", value="A link to Kynk's youtube channel", inline=False)
     respembed.add_field(name='~death', value="You know the rules.", inline=False)
     respembed.add_field(name="~self-deprecation", value="and so do I.", inline=False)
 
