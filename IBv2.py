@@ -19,6 +19,7 @@ BOT_PREFIX = ("~", "&", "alterego ", "alter ego ", "ae ", "lvybot ")
 
 client = Bot(command_prefix=BOT_PREFIX)
 client.remove_command('help')
+token = os.environ["TOKEN"]
 
 @client.check
 async def globally_blacklist_roles(ctx):
@@ -119,4 +120,4 @@ for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}')
 
-client.run('TOKEN')
+client.run(token)
