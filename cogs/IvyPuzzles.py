@@ -99,6 +99,18 @@ Good luck, and have fun!
 
 """
 
+        elif msg == "6":
+            resp = """
+Have we already made 6 of these? Why do I lack a life?
+Anyways, it’s time for instalment number 6 of the Ivy Puzzles.
+6 “small” puzzles of varying difficulty. Can you solve them all?
+As usual, passwords are of the form bit.ly/IP6\_(password).
+DM the final image as proof that you have finished.
+Top 3 people will receive xp for this, and the first person will get something extra.
+Good luck, and have fun.
+
+The link to start is bit.ly/IP6\_ReadySteadyGo
+"""
         else:
             resp = "Invalid Number"
         await ctx.send(resp)
