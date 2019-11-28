@@ -298,7 +298,7 @@ class Responses(commands.Cog):
             'fuck you TT',
             "\\;(",
             ">\\;(",
-            #'ùwú',
+            'Anger',
             #'neat',
             #'-pat-',
         ]
