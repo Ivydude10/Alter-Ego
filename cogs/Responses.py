@@ -261,6 +261,46 @@ class Responses(commands.Cog):
             'ùwú',
             'neat',
             '-pat-',
+            'Batsy has 16 bras',
+        ]
+        await ctx.send(random.choice(possible_responses))
+
+    @commands.command()
+    async def batsy(self, ctx):
+        possible_responses = [
+            'Hmpf',
+            'I swear..',
+            'I will hurt you but I still love you',
+            '**LEEEEEEEEEEEEEE**',
+            '**CLOVEEEEEEEEE**',
+            #'neat',
+            #'-pat-',
+        ]
+        await ctx.send(random.choice(possible_responses))
+
+    @commands.command()
+    async def jay(self, ctx):
+        possible_responses = [
+            'Ducks are birds',
+            'Pbpbpbpbpbt',
+            '*sleeping in vc*',
+            #'nO',
+            #'ùwú',
+            #'neat',
+            #'-pat-',
+        ]
+        await ctx.send(random.choice(possible_responses))
+
+    @commands.command()
+    async def lime(self, ctx):
+        possible_responses = [
+            'Rude',
+            'fuck you TT',
+            #'Magical',
+            #'nO',
+            #'ùwú',
+            #'neat',
+            #'-pat-',
         ]
         await ctx.send(random.choice(possible_responses))
 
