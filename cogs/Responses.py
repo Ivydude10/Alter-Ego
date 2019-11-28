@@ -282,7 +282,7 @@ class Responses(commands.Cog):
     async def jay(self, ctx):
         possible_responses = [
             'Ducks are birds',
-            'Pbpbpbpbpbt',
+            #'Pbpbpbpbpbt',
             '*sleeping in vc*',
             #'nO',
             #'ùwú',
