@@ -273,7 +273,7 @@ class Responses(commands.Cog):
             'I will hurt you but I still love you',
             '**LEEEEEEEEEEEEEE**',
             '**CLOVEEEEEEEEE**',
-            #'neat',
+            'I am your mother. Deal with it.',
             #'-pat-',
         ]
         await ctx.send(random.choice(possible_responses))
@@ -291,7 +291,8 @@ class Responses(commands.Cog):
         ]
         await ctx.send(random.choice(possible_responses))
 
-    @commands.command()
+    @commands.command(name="lime",
+                        aliases=["lemon"])
     async def lime(self, ctx):
         possible_responses = [
             'Rude',
