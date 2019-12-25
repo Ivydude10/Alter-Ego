@@ -123,9 +123,9 @@ What the hell did you guys do?""")
     async def time(self, ctx, name=""):
         check = 1
         name = name.lower()
-        if name == "lime" or name == "carl" or name == "mental" or name == "wale" or name == "wubba" or name == "rubik" or name == "shin'a" or name == "shina" or name == "yasu" or name == "fluffy" or name == "bb" or name == "batsy" or name == "est":
+        if name == "lime" or name == "carl" or name == "mental" or name == "wale" or name == "wubba" or name == "rubik" or name == "shin'a" or name == "shina" or name == "yasu" or name == "fluffy" or name == "bb" or name == "batsy" or name == "pumpkin" or name == "deb" or name == "est":
             tz = pytz.timezone('US/Eastern')
-        elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush" or name == "haiku" or name =="chickaen" or name == "septa" or name == "cst":
+        elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush" or name == "haiku" or name =="chickaen" or name == "septa" or name == "cst" or name == "arc" or name == "rac":
             tz = pytz.timezone('US/Central')
         elif name == "ivy" or name == "tt" or name == "equus" or name == "aest":
             tz = pytz.timezone('Australia/NSW')
@@ -149,6 +149,8 @@ What the hell did you guys do?""")
             tz = pytz.timezone('Asia/Novosibirsk')
         elif name == "ash":
             tz = pytz.timezone('US/Hawaii')
+        elif name == "steven":
+            tz = pytz.timezone("Asia/Seoul")
         else:
             await ctx.send("Invalid Name")
             check = 0
