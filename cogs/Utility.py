@@ -116,7 +116,7 @@ What the hell did you guys do?""")
         if check == 1:
             embeded.add_field(name='Role Colour Changed', value='Successfully changed colour of **' + name + '** to **' + str(value) + "**")
         else:
-            embeded.add_field(name='Role Colour Changed', value='Failed to change colour of **' + name + '** as it does not exist')
+            embeded.add_field(name='Role Colour Changed', value='Failed to change colour of **' + name + '** as that role does not exist')
         await ctx.send(embed=embeded)
 
     @commands.command()
