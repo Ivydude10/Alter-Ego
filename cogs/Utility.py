@@ -125,7 +125,7 @@ What the hell did you guys do?""")
         name = name.lower()
         if name == "lime" or name == "carl" or name == "mental" or name == "wale" or name == "wubba" or name == "rubik" or name == "shin'a" or name == "shina" or name == "yasu" or name == "fluffy" or name == "bb" or name == "batsy" or name == "pumpkin" or name == "deb" or name == "est":
             tz = pytz.timezone('US/Eastern')
-        elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush" or name == "haiku" or name =="chickaen" or name == "septa" or name == "cst" or name == "arc" or name == "rac":
+        elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush" or name == "haiku" or name =="chickaen" or name == "septa" or name == "cst" or name == "arc" or name == "rac" or name == "ayia":
             tz = pytz.timezone('US/Central')
         elif name == "ivy" or name == "tt" or name == "equus" or name == "aest":
             tz = pytz.timezone('Australia/NSW')
