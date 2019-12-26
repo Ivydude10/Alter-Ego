@@ -137,6 +137,8 @@ What the hell did you guys do?""")
             tz = pytz.timezone('MST7MDT')
         elif name == "acoustic":
             tz = pytz.timezone('Singapore')
+        elif name == "jake":
+            tz = pytz.timezone("Pacific/Auckland")
         elif name == "sma":
             tz = pytz.timezone('Asia/Singapore')
         elif name == "mlg":
