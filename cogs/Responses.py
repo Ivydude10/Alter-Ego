@@ -313,10 +313,10 @@ class Responses(commands.Cog):
     @commands.command()
     async def death(self, ctx):
         embeded = discord.Embed(
-            title="Death is Banned Here!",
+            title="Death is no longer Banned Here!",
             colour=discord.Colour.default()
         )
-        embeded.set_image(url='https://cdn.discordapp.com/attachments/353766146115371009/614279320864555019/image0.png')
+        #embeded.set_image(url='https://cdn.discordapp.com/attachments/353766146115371009/614279320864555019/image0.png')
         await ctx.send(embed=embeded)
 
     @commands.command(name="self_deprecation",
