@@ -323,7 +323,12 @@ class Responses(commands.Cog):
                       aliases=["self-deprecation"])
     async def self_deprecation(self, ctx):
         embeded = discord.Embed()
-        embeded.set_image(url="https://cdn.discordapp.com/attachments/503665005015597066/578698184642002975/image0.jpg")
+        possible_link = [
+            "https://cdn.discordapp.com/attachments/503665005015597066/578698184642002975/image0.jpg",
+            "https://cdn.discordapp.com/attachments/605136005967773699/658131074697920562/self-deprecation2.png",
+        ]
+        link = random.choice(possible_link)
+        embeded.set_image(url=link)
         await ctx.send(embed=embeded)
 
 def setup(client):
