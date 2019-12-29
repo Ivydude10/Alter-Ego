@@ -172,6 +172,7 @@ What the hell did you guys do?""")
     async def delete(self, ctx, amnt=1):
         await ctx.channel.purge(limit=amnt+1)
         await ctx.send(f'Deleted {amnt} messages')
+        await ctx.message.delete(delay=5)
 
 
     @commands.command()
