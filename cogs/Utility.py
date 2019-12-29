@@ -167,6 +167,13 @@ What the hell did you guys do?""")
         msg = ''.join(random.choices(hexval, k=6))
         await ctx.send('#' + msg)
 
+    @commands.command(name="delete",
+                      aliases=['del', 'purge', 'clear'])
+    async def delete(self, ctx, amnt=1):
+        await ctx.channel.purge(limit=amnt+1)
+        await ctx.send(f'Deleted {amnt} messages')
+
+
     @commands.command()
     async def addrole(self, ctx, rolename=""):
         user = ctx.message.author
