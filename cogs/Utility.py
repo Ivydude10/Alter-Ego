@@ -61,7 +61,7 @@ What the hell did you guys do?""")
                 await ctx.add_reaction('✅')
                 await ctx.add_reaction('❌')
         if ctx.guild.name == "The Festive Crew":
-            if "chiaki" in ctx.message.content:
+            if "chiaki" in ctx.content:
                 await ctx.add_reaction('<a:ChiakiHug:645236109307019264>')
 
 
