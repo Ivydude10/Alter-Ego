@@ -60,6 +60,9 @@ What the hell did you guys do?""")
             if str(ctx.channel) == "suggestions-and-voting":
                 await ctx.add_reaction('✅')
                 await ctx.add_reaction('❌')
+        if ctx.guild.name == "The Festive Crew":
+            if "chiaki" in ctx.message.content:
+                await ctx.add_reaction('<a:ChiakiHug:645236109307019264>')
 
 
     @commands.command(brief="Only for use in the tavern")
