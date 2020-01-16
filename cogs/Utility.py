@@ -125,12 +125,16 @@ What the hell did you guys do?""")
     @commands.command()
     async def time(self, ctx, name=""):
         check = 1
+        aest = ["aest", "ivy", "tt", "equus"]
+        est = ["est", "lime", "carl", "mental", "wale", "wubba", "rubik", "shin'a", "shina", "yasu", "oishi", "fluffy", "bb", "batsy", "pumpkin", "deb", "peri"]
         name = name.lower()
-        if name == "lime" or name == "carl" or name == "mental" or name == "wale" or name == "wubba" or name == "rubik" or name == "shin'a" or name == "shina" or name == "yasu" or name == "fluffy" or name == "bb" or name == "batsy" or name == "pumpkin" or name == "deb" or name == "peri" or name == "est":
+        #if name == "lime" or name == "carl" or name == "mental" or name == "wale" or name == "wubba" or name == "rubik" or name == "shin'a" or name == "shina" or name == "yasu" or name == "fluffy" or name == "bb" or name == "batsy" or name == "pumpkin" or name == "deb" or name == "peri" or name == "est":
+        if name in est:
             tz = pytz.timezone('US/Eastern')
         elif name == "satan" or name == "red" or name == "jay" or name == "idc" or name == "brush" or name == "haiku" or name =="chickaen" or name == "septa" or name == "cst" or name == "arc" or name == "rac" or name == "ayia":
             tz = pytz.timezone('US/Central')
-        elif name == "ivy" or name == "tt" or name == "equus" or name == "aest":
+        #elif name == "ivy" or name == "tt" or name == "equus" or name == "aest":
+        elif name in aest:
             tz = pytz.timezone('Australia/NSW')
         elif name == "tomer":
             tz = pytz.timezone('Israel')
