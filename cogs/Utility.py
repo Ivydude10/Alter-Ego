@@ -125,7 +125,7 @@ What the hell did you guys do?""")
     @commands.command()
     async def time(self, ctx, name=""):
         check = 1
-        aest = ["aest", "ivy", "tt", "equus"]
+        aest = ["aest", "tt", "equus"]
         est = ["est", "lime", "carl", "mental", "wale", "wubba", "rubik", "shin'a", "shina", "yasu", "oishi", "fluffy", "bb", "batsy", "pumpkin", "deb", "peri"]
         pst = ["pst", "memes", "twg", "zamas", "ded", "merc"]
         cst = ["cst", "satan", "red", "jay", "idc", "brush", "haiku", "chickaen", "septa", "arc", "rac", "ayia"]
@@ -160,6 +160,9 @@ What the hell did you guys do?""")
             tz = pytz.timezone('US/Hawaii')
         elif name == "steven":
             tz = pytz.timezone("Asia/Seoul")
+        elif name == "ivy":
+            await ctx.send("Unable to display Ivy's current time")
+            check = 0
         else:
             await ctx.send("Invalid Name")
             check = 0
