@@ -161,8 +161,7 @@ What the hell did you guys do?""")
         elif name == "steven":
             tz = pytz.timezone("Asia/Seoul")
         elif name == "ivy":
-            await ctx.send("Unable to display Ivy's current time")
-            check = 0
+            tz = pytz.timezone("Asia/Kolkata")
         else:
             await ctx.send("Invalid Name")
             check = 0
