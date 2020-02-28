@@ -31,10 +31,10 @@ class Utility(commands.Cog):
                     await self.client.get_channel(518457529727057951).send(f"""Hi {ctx.mention}! Welcome to **Banana Army**. Please make sure to read through <#528411370337599488> before using this server. Head over to <#533515934149640192> and follow the instructions there if you haven't done so already. Otherwise, we hope you have a great time in our group <:mudkip:528569347426222081>
 
                     We are now currently at **{number}** members. Rock on, gamers ;))""")
-        if ctx.guild.name == "The Festive Crew":
+        if ctx.guild.name == "Turn-based Fancy Counting":
             for channel in ctx.guild.channels:
                 if str(channel) == "welcomes":
-                    await self.client.get_channel(570851644107915269).send(f"""Hello, and welcome {ctx.mention} to The Festive Crew!
+                    await self.client.get_channel(570851644107915269).send(f"""Hello, and welcome {ctx.mention} to TFC!
 
 Please make them feel welcomed!""")
 
@@ -47,10 +47,10 @@ Please make them feel welcomed!""")
                     await self.client.get_channel(518457529727057951).send(f"""**{ctx.display_name}** has left **Banana Army**. Cheers, mate. It was nice having you in our server.
 
                     We are now currently at **{number}** members. Rock on, gamers ;))""")
-        if ctx.guild.name == "The Festive Crew":
+        if ctx.guild.name == "Turn-based Fancy Counting":
             for channel in ctx.guild.channels:
                 if str(channel) == "welcomes":
-                    await self.client.get_channel(570851644107915269).send(f"""Oh no! {ctx.display_name} has left The Festive Crew.
+                    await self.client.get_channel(570851644107915269).send(f"""Oh no! {ctx.display_name} has left TFC.
 
 What the hell did you guys do?""")
 
