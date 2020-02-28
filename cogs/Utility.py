@@ -160,8 +160,11 @@ What the hell did you guys do?""")
             tz = pytz.timezone('US/Hawaii')
         elif name == "steven":
             tz = pytz.timezone("Asia/Seoul")
-        elif name == "ivy":
+        elif name == "ist":
             tz = pytz.timezone("Asia/Kolkata")
+        elif name == "ivy":
+            await ctx.send("Error: Please try again later.")
+            check = 0
         else:
             await ctx.send("Invalid Name")
             check = 0
