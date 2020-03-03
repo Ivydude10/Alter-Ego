@@ -144,7 +144,11 @@ class Fun(commands.Cog):
         elif name == "pan":
             heart = ":heartpulse::yellow_heart::blue_heart:"
         elif name == "bi":
-            heart = ":heart::purple_heart::blue_heart: "
+            heart = ":heart::purple_heart::blue_heart:"
+        elif name == "gay":
+            heart = ":heart::orange_heart::yellow_heart::green_heart::blue_heart::purple_heart:"
+        elif name == "trans":
+            heart = ":blue_heart::heartpulse::white_heart::heartpulse::blue_heart:"
         else:
             await ctx.send("Invalid flag (or I just haven't added it yet)")
             flag = 1
