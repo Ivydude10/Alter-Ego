@@ -133,6 +133,26 @@ class Fun(commands.Cog):
         await ctx.send(embed=embeded)
 
     @commands.command()
+    async def heart(self, ctx, name):
+        heart = ""
+        flag = 0
+        name = name.lower()
+        if name == "aro":
+            heart = ":black_heart::white_heart::green_heart:"
+        elif name == "ace":
+            heart = ":black_heart::white_heart::purple_heart:"
+        elif name == "pan":
+            heart = ":heartpulse::yellow_heart::blue_heart:"
+        elif name == "bi":
+            heart = ":heart::purple_heart::blue_heart: "
+        else:
+            await ctx.send("Invalid flag (or I just haven't added it yet)")
+            flag = 1
+        if flag == 0:
+            await ctx.send(heart)
+
+
+    @commands.command()
     async def pat(self, ctx, member : discord.Member):
          author = ctx.message.author
     #    if member.id == "359217949246226434":
