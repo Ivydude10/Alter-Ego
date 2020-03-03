@@ -137,18 +137,28 @@ class Fun(commands.Cog):
         heart = ""
         flag = 0
         name = name.lower()
-        if name == "aro":
+        if name == "aro" or name == "aromantic":
             heart = ":black_heart::white_heart::green_heart:"
-        elif name == "ace":
+        elif name == "ace" or name == "asexual":
             heart = ":black_heart::white_heart::purple_heart:"
-        elif name == "pan":
+        elif name == "pan" or name == "pansexual":
             heart = ":heartpulse::yellow_heart::blue_heart:"
-        elif name == "bi":
+        elif name == "bi" or name == "bisexual":
             heart = ":heart::purple_heart::blue_heart:"
         elif name == "gay":
             heart = ":heart::orange_heart::yellow_heart::green_heart::blue_heart::purple_heart:"
-        elif name == "trans":
+        elif name == "trans" or name == "transgender":
             heart = ":blue_heart::heartpulse::white_heart::heartpulse::blue_heart:"
+        elif name == "les" or name == "lesbian":
+            heart = ":orange_heart::white_heart::heartpulse:"
+        elif name == "nb" or name == "nonbinary":
+            heart = ":yellow_heart::white_heart::purple_heart::black_heart:"
+        elif name == "poly" or name == "polysexual":
+            heart = ":heartpulse::green_heart::blue_heart:"
+        elif name == "gf" or name == "genderfluid":
+            heart = ":heartpulse::white_heart::purple_heart::black_heart::blue_heart:"
+        elif name == "gq" or name == "genderqueer":
+            heart = ":purple_heart::white_heart::green_heart:"
         else:
             await ctx.send("Invalid flag (or I just haven't added it yet)")
             flag = 1
