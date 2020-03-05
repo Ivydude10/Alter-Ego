@@ -291,6 +291,19 @@ class Responses(commands.Cog):
         ]
         await ctx.send(random.choice(possible_responses))
 
+    @commands.command()
+    async def ivy(self, ctx):
+        possible_responses = [
+            'Appreciate what you what, be are the make you appreciate what you dad.',
+            'hey hey',
+            'DEAR MARIA COUNT ME IN',
+            #'nO',
+            #'ùwú',
+            #'neat',
+            #'-pat-',
+        ]
+        await ctx.send(random.choice(possible_responses))
+
     @commands.command(name="lime",
                         aliases=["lemon"])
     async def lime(self, ctx):
