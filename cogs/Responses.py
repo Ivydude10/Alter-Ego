@@ -274,7 +274,7 @@ class Responses(commands.Cog):
             '**LEEEEEEEEEEEEEE**',
             '**CLOVEEEEEEEEE**',
             'I am your mother. Deal with it.',
-            #'-pat-',
+            "I'm not as think as you drunk I am",
         ]
         await ctx.send(random.choice(possible_responses))
 
