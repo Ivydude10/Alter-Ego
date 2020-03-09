@@ -28,9 +28,9 @@ class Utility(commands.Cog):
         if ctx.guild.name == "Banana Army":
             for channel in ctx.guild.channels:
                 if str(channel) == "hellos-and-goodbyes":
-                    await self.client.get_channel(518457529727057951).send(f"""Hi {ctx.mention}! Welcome to **Banana Army**. Please make sure to read through <#528411370337599488> before using this server. Head over to <#533515934149640192> and follow the instructions there if you haven't done so already. Otherwise, we hope you have a great time in our group <:mudkip:528569347426222081>
+                    await self.client.get_channel(518457529727057951).send(f"""Hi {ctx.mention}! Welcome to **Banana Army**. Please make sure to read through <#686371103543001258> before using this server. Head over to <#533515934149640192> and follow the instructions there if you haven't done so already. Otherwise, we hope you have a great time in our group <:mudkip:528569347426222081>
 
-                    We are now currently at **{number}** members. Rock on, gamers ;))""")
+We are now currently at **{number}** members. Rock on, gamers ;))""")
         if ctx.guild.name == "Turn-based Fancy Counting":
             for channel in ctx.guild.channels:
                 if str(channel) == "welcomes":
@@ -46,7 +46,7 @@ Please make them feel welcomed!""")
                 if str(channel) == "hellos-and-goodbyes":
                     await self.client.get_channel(518457529727057951).send(f"""**{ctx.display_name}** has left **Banana Army**. Cheers, mate. It was nice having you in our server.
 
-                    We are now currently at **{number}** members. Rock on, gamers ;))""")
+We are now currently at **{number}** members. Rock on, gamers ;))""")
         if ctx.guild.name == "Turn-based Fancy Counting":
             for channel in ctx.guild.channels:
                 if str(channel) == "welcomes":
