@@ -179,6 +179,7 @@ What the hell did you guys do?""")
     @commands.command(name="delete",
                       aliases=['del', 'purge', 'clear'])
     async def delete(self, ctx, amnt=1):
+        user = ctx.message.author
         if user.id == 202428607610486786 or user.id == 639801918381752340 or user.id == 458964261738250263:
             await ctx.channel.purge(limit=amnt+1)
             await ctx.send(f'Deleted {amnt} messages')
