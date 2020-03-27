@@ -179,10 +179,13 @@ What the hell did you guys do?""")
     @commands.command(name="delete",
                       aliases=['del', 'purge', 'clear'])
     async def delete(self, ctx, amnt=1):
-        await ctx.channel.purge(limit=amnt+1)
-        await ctx.send(f'Deleted {amnt} messages')
-        await asyncio.sleep(5)
-        await ctx.channel.purge(limit=1)
+        if user.id == 202428607610486786 or user.id == 639801918381752340 or user.id == 458964261738250263:
+            await ctx.channel.purge(limit=amnt+1)
+            await ctx.send(f'Deleted {amnt} messages')
+            await asyncio.sleep(2)
+            await ctx.channel.purge(limit=1)
+        else:
+            await ctx.send("You do not have permission")
 
 
     @commands.command()
