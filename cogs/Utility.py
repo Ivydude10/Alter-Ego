@@ -126,7 +126,7 @@ What the hell did you guys do?""")
     async def time(self, ctx, name=""):
         check = 1
         aest = ["aest", "tt", "equus", "ivy"]
-        est = ["est", "lime", "carl", "mental", "wale", "wubba", "rubik", "shin'a", "shina", "yasu", "oishi", "fluffy", "bb", "batsy", "pumpkin", "deb", "peri"]
+        est = ["est", "lime", "carl", "mental", "wale", "wubba", "rubik", "shin'a", "shina", "yasu", "oishi", "fluffy", "bb", "batsy", "pumpkin", "deb", "peri", "shadow"]
         pst = ["pst", "memes", "twg", "zamas", "ded", "merc"]
         cst = ["cst", "satan", "red", "jay", "idc", "brush", "haiku", "chickaen", "septa", "arc", "rac", "ayia"]
         name = name.lower()
