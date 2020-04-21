@@ -24,30 +24,29 @@ class IvyPuzzles(commands.Cog):
                     brief="The Hub of the Ivy Puzzles")
     async def ivypuzzle(self, ctx, msg=""):
         resp = ""
-        switcher=
-        {
-            "":"Please enter a number and try again.",
-            "1":"""
+        switcher = {
+            "": "Please enter a number and try again.",
+            "1": """
 So uhh... Hello, and Welcome! To Ivy Puzzle 1!
 This is my first real attempt at a short but fun puzzle.
 Hopefully you enjoy this, and please give me some feedback.
 Anyways, go to bit.ly/IP1\_start to begin.
 
 P.S. All links are in the form of bit.ly/IP1\_(password)""",
-            "2":"""
+            "2": """
 It's that time once again!
 Ivy's Puzzle 2 is officially released.
 Go to bit.ly/IP2\_SystemStart to begin.
 And once again, all links are of the form bit.ly/IP2\_(insert pass here).
 """,
-            "3":"""
+            "3": """
 Ah shoot, here we go again!
 It's time for the third instalment of Ivy's Puzzles.
 You should know the drill by now, all links are of the form bit.ly/IP\3_(insertphrasehere).
 The link to start is down below:
 bit.ly/IP3\_InitiateTesting
 """,
-            "4":"""
+            "4": """
 It's time. The moment you've all been waiting for.
 The release of IP4 is now.
 Passwords are the same as usual, bit.ly/IP\4_???
@@ -57,7 +56,7 @@ First one to dm me the secret image gets a special reward.
 Ready or not? Here. We. Go.
 bit.ly/IP4\_ReadyOrNot
 """,
-            "4secret":"""
+            "4secret": """
             So, you tried to be clever huh?
     Thought you could gain early access to IP4?
     Well too bad, since it isnt available yet.
@@ -73,7 +72,7 @@ bit.ly/IP4\_ReadyOrNot
     Ugh, fine. You might wanna revist the links of the previous puzzles... ;)
 
     P.S. You might wanna keep this to yourself. Only one person can claim the secret.""",
-            "5":"""
+            "5": """
 And we are back! With another *beautiful* Ivy Puzzle.
 This time, we are on number 5! And for that, we have a special edition.
 This time, it's less about the ciphers, and more about your music knowledge.
@@ -92,7 +91,7 @@ And the first one to DM me the bonus phrase, gets a special bonus, TBA.
 Good luck, and have fun!
 
 """,
-            "6":"""
+            "6": """
 Have we already made 6 of these? Why do I lack a life?
 Anyways, it’s time for instalment number 6 of the Ivy Puzzles.
 6 “small” puzzles of varying difficulty. Can you solve them all?
@@ -103,10 +102,10 @@ Good luck, and have fun.
 
 The link to start is bit.ly/IP6\_ReadySteadyGo
 """
-            "7":"""Nothing to see here, move along..."""
+            "7": """Nothing to see here, move along..."""
 
         }
-        resp = switcher.get(msg, "Invalid Response")
+        resp = switcher.get(msg, "Invalid Number")
         await ctx.send(resp)
 
 
