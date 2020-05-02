@@ -298,7 +298,8 @@ What the hell did you guys do?""")
     async def serverlist(self, ctx):
         if ctx.message.author.id == 202428607610486786:
             servers = list(client.guilds)
-            await ctx.send("Connected on " + str(len(servers)) + " servers:")
+            num = len(client.guilds)
+            await ctx.send("Connected on " + num + " servers:")
             for x in range(len(servers)):
                 await ctx.send(''+servers[x-1].name)
 
