@@ -299,7 +299,7 @@ What the hell did you guys do?""")
         if ctx.message.author.id == 202428607610486786:
             servers = list(client.guilds)
             num = len(client.guilds)
-            await ctx.send("Connected on " + num + " servers:")
+            await ctx.send("Connected on " + str(num) + " servers:")
             for x in range(len(servers)):
                 await ctx.send(''+servers[x-1].name)
 
