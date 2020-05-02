@@ -79,6 +79,15 @@ async def help(ctx):
     await ctx.message.author.send(embed=respembed)
 
 @client.command()
+    async def serverlist(ctx):
+        if ctx.message.author.id == 202428607610486786:
+            servers = list(client.guilds)
+            num = len(client.guilds)
+            await ctx.send("Connected on " + str(num) + " servers:")
+            for x in range(len(servers)):
+                await ctx.send(''+servers[x-1].name)
+
+@client.command()
 async def load(ctx, extension):
     client.load_extension(f'cogs.{extension}')
 
