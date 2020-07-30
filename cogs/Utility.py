@@ -253,7 +253,7 @@ What the hell did you guys do?""")
             colour=discord.Colour.default()
         )
         embeded.set_thumbnail(url=user.avatar_url)
-        if user.id == 202428607610486786:
+        if user.id == 202428607610486786 or user.id == 639801918381752340 or user.id == 458964261738250263:
             role = rolename
         else:
             if rolename == "birb":
